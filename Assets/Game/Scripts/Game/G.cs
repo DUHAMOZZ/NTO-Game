@@ -5,6 +5,8 @@ public static class G
     // каждый менеджер должен быть с интерфейсом IServise
     // тут объявлять менеджеры
     //public static GameMain GameMain;
+
+    public static CMS CMS;
 }
 
 [DefaultExecutionOrder(-9999)]
@@ -24,6 +26,8 @@ public static class Bootstrapper
 
         // тут порядок создания
         //G.GameMain = CreateSimpleService<GameMain>();
+
+        G.CMS = CreateSimpleService<CMS>();
 
         //можно еще так, когда сцена загружается
         //G.SceneLoader.OnLoadAction = () =>
