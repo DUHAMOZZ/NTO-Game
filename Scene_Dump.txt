@@ -1,0 +1,2166 @@
+﻿# СРЕЗ АРХИТЕКТУРЫ СЦЕНЫ: 0
+Дата выгрузки: 15.11.2026 23:13:22
+Unity Version: 6000.3.28f1
+============================================================
+
+? Directional Light [Active] (Layer: Default)
+   • <b>Light</b>
+       ?? <i>Type</i> = Directional
+       ?? <i>Intensity</i> = 0,00
+       ?? <i>Range</i> = 10,00
+       ?? <i>Spot Angle</i> = 30,00
+       ?? <i>Inner Spot Angle</i> = 21,80
+       ?? <i>Cookie</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+       ?? <i>Draw Halo</i> = False
+       ?? <i>Flare</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+       ?? <i>Render Mode</i> = Auto
+       ?? <i>Rendering Layer Mask</i> = 1
+       ?? <i>Lightmapping</i> = Realtime
+       ?? <i>Light Shadow Caster Mode</i> = 0
+       ?? <i>Bounce Intensity</i> = 1,00
+       ?? <i>Color Temperature</i> = 5000,00
+       ?? <i>Use Color Temperature</i> = True
+       ?? <i>Use Bounding Sphere Override</i> = False
+       ?? <i>Use View Frustum For Shadow Caster Cull</i> = True
+       ?? <i>Force Visible</i> = False
+       ?? <i>Shadow Radius</i> = 0,00
+       ?? <i>Shadow Angle</i> = 0,00
+       ?? <i>Light Unit</i> = 1
+       ?? <i>Lux At Distance</i> = 1,00
+       ?? <i>Enable Spot Reflector</i> = True
+   • <b>UniversalAdditionalLightData</b>
+       ?? <i>Use Pipeline Settings</i> = True
+       ?? <i>Additional Lights Shadow Resolution Tier</i> = 2
+       ?? <i>Custom Shadow Layers</i> = False
+       ?? <i>Soft Shadow Quality</i> = Low
+       ?? <i>Version</i> = Rendering Layers Mask
+       ?? <i>Light Layer Mask</i> = Light Layer Default
+       ?? <i>Shadow Layer Mask</i> = Light Layer Default
+       ?? <i>Rendering Layers</i> = 1
+       ?? <i>Shadow Rendering Layers</i> = 1
+? Global Volume [Active] (Layer: Default)
+   • <b>Volume</b>
+       ?? <i>Is Global</i> = True
+       ?? <i>Priority</i> = 0,00
+       ?? <i>Blend Distance</i> = 0,00
+       ?? <i>Weight</i> = 1,00
+       ?? <i>Shared Profile</i>: SampleSceneProfile (VolumeProfile)
+? room [Active] (Layer: Default)
+   ??? blockout [Active] (Layer: Default)
+      ??? floor [Active] (Layer: Default)
+         • <b>MeshFilter</b>
+             ?? <i>Mesh</i>: Cube (Mesh)
+         • <b>MeshRenderer</b>
+             ?? <i>Cast Shadows</i> = On
+             ?? <i>Receive Shadows</i> = True
+             ?? <i>Dynamic Occludee</i> = True
+             ?? <i>Static Shadow Caster</i> = False
+             ?? <i>Motion Vectors</i> = Per Object Motion
+             ?? <i>Light Probe Usage</i> = 1
+             ?? <i>Reflection Probe Usage</i> = 1
+             ?? <i>Ray Tracing Mode</i> = 2
+             ?? <i>Ray Trace Procedural</i> = False
+             ?? <i>Ray Tracing Accel Struct Build Flags Override</i> = False
+             ?? <i>Ray Tracing Accel Struct Build Flags</i> = 1
+             ?? <i>Small Mesh Culling</i> = True
+             ?? <i>Force Mesh Lod</i> = -1
+             ?? <i>Mesh Lod Selection Bias</i> = 0,00
+             ?? <i>Rendering Layer Mask</i> = 1
+             ?? <i>Renderer Priority</i> = 0
+             ?? <i>Probe Anchor</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+             ?? <i>Light Probe Volume Override</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+             ?? <i>Scale In Lightmap</i> = 1,00
+             ?? <i>Receive GI</i> = 1
+             ?? <i>Preserve U Vs</i> = False
+             ?? <i>Ignore Normals For Chart Detection</i> = False
+             ?? <i>Important GI</i> = False
+             ?? <i>Stitch Lightmap Seams</i> = True
+             ?? <i>Minimum Chart Size</i> = 4
+             ?? <i>Auto UV Max Distance</i> = 0,50
+             ?? <i>Auto UV Max Angle</i> = 89,00
+             ?? <i>Lightmap Parameters</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+             ?? <i>Mask Interaction</i> = None
+         • <b>BoxCollider</b>
+             ?? <i>Material</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+             ?? <i>Layer Override Priority</i> = 0
+             ?? <i>Is Trigger</i> = False
+             ?? <i>Provides Contacts</i> = False
+      ??? ceiling [Active] (Layer: Default)
+         • <b>MeshFilter</b>
+             ?? <i>Mesh</i>: Cube (Mesh)
+         • <b>MeshRenderer</b>
+             ?? <i>Cast Shadows</i> = On
+             ?? <i>Receive Shadows</i> = True
+             ?? <i>Dynamic Occludee</i> = True
+             ?? <i>Static Shadow Caster</i> = False
+             ?? <i>Motion Vectors</i> = Per Object Motion
+             ?? <i>Light Probe Usage</i> = 1
+             ?? <i>Reflection Probe Usage</i> = 1
+             ?? <i>Ray Tracing Mode</i> = 2
+             ?? <i>Ray Trace Procedural</i> = False
+             ?? <i>Ray Tracing Accel Struct Build Flags Override</i> = False
+             ?? <i>Ray Tracing Accel Struct Build Flags</i> = 1
+             ?? <i>Small Mesh Culling</i> = True
+             ?? <i>Force Mesh Lod</i> = -1
+             ?? <i>Mesh Lod Selection Bias</i> = 0,00
+             ?? <i>Rendering Layer Mask</i> = 1
+             ?? <i>Renderer Priority</i> = 0
+             ?? <i>Probe Anchor</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+             ?? <i>Light Probe Volume Override</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+             ?? <i>Scale In Lightmap</i> = 1,00
+             ?? <i>Receive GI</i> = 1
+             ?? <i>Preserve U Vs</i> = False
+             ?? <i>Ignore Normals For Chart Detection</i> = False
+             ?? <i>Important GI</i> = False
+             ?? <i>Stitch Lightmap Seams</i> = True
+             ?? <i>Minimum Chart Size</i> = 4
+             ?? <i>Auto UV Max Distance</i> = 0,50
+             ?? <i>Auto UV Max Angle</i> = 89,00
+             ?? <i>Lightmap Parameters</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+             ?? <i>Mask Interaction</i> = None
+         • <b>BoxCollider</b>
+             ?? <i>Material</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+             ?? <i>Layer Override Priority</i> = 0
+             ?? <i>Is Trigger</i> = False
+             ?? <i>Provides Contacts</i> = False
+      ??? wall 1 [Active] (Layer: Default)
+         • <b>MeshFilter</b>
+             ?? <i>Mesh</i>: Cube (Mesh)
+         • <b>MeshRenderer</b>
+             ?? <i>Cast Shadows</i> = On
+             ?? <i>Receive Shadows</i> = True
+             ?? <i>Dynamic Occludee</i> = True
+             ?? <i>Static Shadow Caster</i> = False
+             ?? <i>Motion Vectors</i> = Per Object Motion
+             ?? <i>Light Probe Usage</i> = 1
+             ?? <i>Reflection Probe Usage</i> = 1
+             ?? <i>Ray Tracing Mode</i> = 2
+             ?? <i>Ray Trace Procedural</i> = False
+             ?? <i>Ray Tracing Accel Struct Build Flags Override</i> = False
+             ?? <i>Ray Tracing Accel Struct Build Flags</i> = 1
+             ?? <i>Small Mesh Culling</i> = True
+             ?? <i>Force Mesh Lod</i> = -1
+             ?? <i>Mesh Lod Selection Bias</i> = 0,00
+             ?? <i>Rendering Layer Mask</i> = 1
+             ?? <i>Renderer Priority</i> = 0
+             ?? <i>Probe Anchor</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+             ?? <i>Light Probe Volume Override</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+             ?? <i>Scale In Lightmap</i> = 1,00
+             ?? <i>Receive GI</i> = 1
+             ?? <i>Preserve U Vs</i> = False
+             ?? <i>Ignore Normals For Chart Detection</i> = False
+             ?? <i>Important GI</i> = False
+             ?? <i>Stitch Lightmap Seams</i> = True
+             ?? <i>Minimum Chart Size</i> = 4
+             ?? <i>Auto UV Max Distance</i> = 0,50
+             ?? <i>Auto UV Max Angle</i> = 89,00
+             ?? <i>Lightmap Parameters</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+             ?? <i>Mask Interaction</i> = None
+         • <b>BoxCollider</b>
+             ?? <i>Material</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+             ?? <i>Layer Override Priority</i> = 0
+             ?? <i>Is Trigger</i> = False
+             ?? <i>Provides Contacts</i> = False
+      ??? wall 2 [Active] (Layer: Default)
+         • <b>MeshFilter</b>
+             ?? <i>Mesh</i>: Cube (Mesh)
+         • <b>MeshRenderer</b>
+             ?? <i>Cast Shadows</i> = On
+             ?? <i>Receive Shadows</i> = True
+             ?? <i>Dynamic Occludee</i> = True
+             ?? <i>Static Shadow Caster</i> = False
+             ?? <i>Motion Vectors</i> = Per Object Motion
+             ?? <i>Light Probe Usage</i> = 1
+             ?? <i>Reflection Probe Usage</i> = 1
+             ?? <i>Ray Tracing Mode</i> = 2
+             ?? <i>Ray Trace Procedural</i> = False
+             ?? <i>Ray Tracing Accel Struct Build Flags Override</i> = False
+             ?? <i>Ray Tracing Accel Struct Build Flags</i> = 1
+             ?? <i>Small Mesh Culling</i> = True
+             ?? <i>Force Mesh Lod</i> = -1
+             ?? <i>Mesh Lod Selection Bias</i> = 0,00
+             ?? <i>Rendering Layer Mask</i> = 1
+             ?? <i>Renderer Priority</i> = 0
+             ?? <i>Probe Anchor</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+             ?? <i>Light Probe Volume Override</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+             ?? <i>Scale In Lightmap</i> = 1,00
+             ?? <i>Receive GI</i> = 1
+             ?? <i>Preserve U Vs</i> = False
+             ?? <i>Ignore Normals For Chart Detection</i> = False
+             ?? <i>Important GI</i> = False
+             ?? <i>Stitch Lightmap Seams</i> = True
+             ?? <i>Minimum Chart Size</i> = 4
+             ?? <i>Auto UV Max Distance</i> = 0,50
+             ?? <i>Auto UV Max Angle</i> = 89,00
+             ?? <i>Lightmap Parameters</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+             ?? <i>Mask Interaction</i> = None
+         • <b>BoxCollider</b>
+             ?? <i>Material</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+             ?? <i>Layer Override Priority</i> = 0
+             ?? <i>Is Trigger</i> = False
+             ?? <i>Provides Contacts</i> = False
+      ??? wall 3 [Active] (Layer: Default)
+         • <b>MeshFilter</b>
+             ?? <i>Mesh</i>: Cube (Mesh)
+         • <b>MeshRenderer</b>
+             ?? <i>Cast Shadows</i> = On
+             ?? <i>Receive Shadows</i> = True
+             ?? <i>Dynamic Occludee</i> = True
+             ?? <i>Static Shadow Caster</i> = False
+             ?? <i>Motion Vectors</i> = Per Object Motion
+             ?? <i>Light Probe Usage</i> = 1
+             ?? <i>Reflection Probe Usage</i> = 1
+             ?? <i>Ray Tracing Mode</i> = 2
+             ?? <i>Ray Trace Procedural</i> = False
+             ?? <i>Ray Tracing Accel Struct Build Flags Override</i> = False
+             ?? <i>Ray Tracing Accel Struct Build Flags</i> = 1
+             ?? <i>Small Mesh Culling</i> = True
+             ?? <i>Force Mesh Lod</i> = -1
+             ?? <i>Mesh Lod Selection Bias</i> = 0,00
+             ?? <i>Rendering Layer Mask</i> = 1
+             ?? <i>Renderer Priority</i> = 0
+             ?? <i>Probe Anchor</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+             ?? <i>Light Probe Volume Override</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+             ?? <i>Scale In Lightmap</i> = 1,00
+             ?? <i>Receive GI</i> = 1
+             ?? <i>Preserve U Vs</i> = False
+             ?? <i>Ignore Normals For Chart Detection</i> = False
+             ?? <i>Important GI</i> = False
+             ?? <i>Stitch Lightmap Seams</i> = True
+             ?? <i>Minimum Chart Size</i> = 4
+             ?? <i>Auto UV Max Distance</i> = 0,50
+             ?? <i>Auto UV Max Angle</i> = 89,00
+             ?? <i>Lightmap Parameters</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+             ?? <i>Mask Interaction</i> = None
+         • <b>BoxCollider</b>
+             ?? <i>Material</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+             ?? <i>Layer Override Priority</i> = 0
+             ?? <i>Is Trigger</i> = False
+             ?? <i>Provides Contacts</i> = False
+      ??? wall 4 [Active] (Layer: Default)
+         • <b>MeshFilter</b>
+             ?? <i>Mesh</i>: Cube (Mesh)
+         • <b>MeshRenderer</b>
+             ?? <i>Cast Shadows</i> = On
+             ?? <i>Receive Shadows</i> = True
+             ?? <i>Dynamic Occludee</i> = True
+             ?? <i>Static Shadow Caster</i> = False
+             ?? <i>Motion Vectors</i> = Per Object Motion
+             ?? <i>Light Probe Usage</i> = 1
+             ?? <i>Reflection Probe Usage</i> = 1
+             ?? <i>Ray Tracing Mode</i> = 2
+             ?? <i>Ray Trace Procedural</i> = False
+             ?? <i>Ray Tracing Accel Struct Build Flags Override</i> = False
+             ?? <i>Ray Tracing Accel Struct Build Flags</i> = 1
+             ?? <i>Small Mesh Culling</i> = True
+             ?? <i>Force Mesh Lod</i> = -1
+             ?? <i>Mesh Lod Selection Bias</i> = 0,00
+             ?? <i>Rendering Layer Mask</i> = 1
+             ?? <i>Renderer Priority</i> = 0
+             ?? <i>Probe Anchor</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+             ?? <i>Light Probe Volume Override</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+             ?? <i>Scale In Lightmap</i> = 1,00
+             ?? <i>Receive GI</i> = 1
+             ?? <i>Preserve U Vs</i> = False
+             ?? <i>Ignore Normals For Chart Detection</i> = False
+             ?? <i>Important GI</i> = False
+             ?? <i>Stitch Lightmap Seams</i> = True
+             ?? <i>Minimum Chart Size</i> = 4
+             ?? <i>Auto UV Max Distance</i> = 0,50
+             ?? <i>Auto UV Max Angle</i> = 89,00
+             ?? <i>Lightmap Parameters</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+             ?? <i>Mask Interaction</i> = None
+         • <b>BoxCollider</b>
+             ?? <i>Material</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+             ?? <i>Layer Override Priority</i> = 0
+             ?? <i>Is Trigger</i> = False
+             ?? <i>Provides Contacts</i> = False
+      ??? Point Light 1 [Active] (Layer: Default)
+         • <b>Light</b>
+             ?? <i>Type</i> = Point
+             ?? <i>Intensity</i> = 20,00
+             ?? <i>Range</i> = 20,65
+             ?? <i>Spot Angle</i> = 30,00
+             ?? <i>Inner Spot Angle</i> = 21,80
+             ?? <i>Cookie</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+             ?? <i>Draw Halo</i> = False
+             ?? <i>Flare</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+             ?? <i>Render Mode</i> = Auto
+             ?? <i>Rendering Layer Mask</i> = 1
+             ?? <i>Lightmapping</i> = Realtime
+             ?? <i>Light Shadow Caster Mode</i> = 0
+             ?? <i>Bounce Intensity</i> = 1,00
+             ?? <i>Color Temperature</i> = 6570,00
+             ?? <i>Use Color Temperature</i> = False
+             ?? <i>Use Bounding Sphere Override</i> = False
+             ?? <i>Use View Frustum For Shadow Caster Cull</i> = True
+             ?? <i>Force Visible</i> = False
+             ?? <i>Shadow Radius</i> = 0,00
+             ?? <i>Shadow Angle</i> = 0,00
+             ?? <i>Light Unit</i> = 1
+             ?? <i>Lux At Distance</i> = 1,00
+             ?? <i>Enable Spot Reflector</i> = True
+         • <b>UniversalAdditionalLightData</b>
+             ?? <i>Use Pipeline Settings</i> = True
+             ?? <i>Additional Lights Shadow Resolution Tier</i> = 2
+             ?? <i>Custom Shadow Layers</i> = False
+             ?? <i>Soft Shadow Quality</i> = Use settings from Render Pipeline Asset
+             ?? <i>Version</i> = Rendering Layers Mask
+             ?? <i>Light Layer Mask</i> = Light Layer Default
+             ?? <i>Shadow Layer Mask</i> = Light Layer Default
+             ?? <i>Rendering Layers</i> = 1
+             ?? <i>Shadow Rendering Layers</i> = 1
+      ??? Point Light 2 [Active] (Layer: Default)
+         • <b>Light</b>
+             ?? <i>Type</i> = Point
+             ?? <i>Intensity</i> = 5,00
+             ?? <i>Range</i> = 20,65
+             ?? <i>Spot Angle</i> = 30,00
+             ?? <i>Inner Spot Angle</i> = 21,80
+             ?? <i>Cookie</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+             ?? <i>Draw Halo</i> = False
+             ?? <i>Flare</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+             ?? <i>Render Mode</i> = Auto
+             ?? <i>Rendering Layer Mask</i> = 1
+             ?? <i>Lightmapping</i> = Realtime
+             ?? <i>Light Shadow Caster Mode</i> = 0
+             ?? <i>Bounce Intensity</i> = 1,00
+             ?? <i>Color Temperature</i> = 6570,00
+             ?? <i>Use Color Temperature</i> = False
+             ?? <i>Use Bounding Sphere Override</i> = False
+             ?? <i>Use View Frustum For Shadow Caster Cull</i> = True
+             ?? <i>Force Visible</i> = False
+             ?? <i>Shadow Radius</i> = 0,00
+             ?? <i>Shadow Angle</i> = 0,00
+             ?? <i>Light Unit</i> = 1
+             ?? <i>Lux At Distance</i> = 1,00
+             ?? <i>Enable Spot Reflector</i> = True
+         • <b>UniversalAdditionalLightData</b>
+             ?? <i>Use Pipeline Settings</i> = True
+             ?? <i>Additional Lights Shadow Resolution Tier</i> = 2
+             ?? <i>Custom Shadow Layers</i> = False
+             ?? <i>Soft Shadow Quality</i> = Use settings from Render Pipeline Asset
+             ?? <i>Version</i> = Rendering Layers Mask
+             ?? <i>Light Layer Mask</i> = Light Layer Default
+             ?? <i>Shadow Layer Mask</i> = Light Layer Default
+             ?? <i>Rendering Layers</i> = 1
+             ?? <i>Shadow Rendering Layers</i> = 1
+   ??? table [Active] (Layer: Default)
+      ??? table leg 1 [Active] (Layer: Default)
+         • <b>MeshFilter</b>
+             ?? <i>Mesh</i>: Cube (Mesh)
+         • <b>MeshRenderer</b>
+             ?? <i>Cast Shadows</i> = On
+             ?? <i>Receive Shadows</i> = True
+             ?? <i>Dynamic Occludee</i> = True
+             ?? <i>Static Shadow Caster</i> = False
+             ?? <i>Motion Vectors</i> = Per Object Motion
+             ?? <i>Light Probe Usage</i> = 1
+             ?? <i>Reflection Probe Usage</i> = 1
+             ?? <i>Ray Tracing Mode</i> = 2
+             ?? <i>Ray Trace Procedural</i> = False
+             ?? <i>Ray Tracing Accel Struct Build Flags Override</i> = False
+             ?? <i>Ray Tracing Accel Struct Build Flags</i> = 1
+             ?? <i>Small Mesh Culling</i> = True
+             ?? <i>Force Mesh Lod</i> = -1
+             ?? <i>Mesh Lod Selection Bias</i> = 0,00
+             ?? <i>Rendering Layer Mask</i> = 1
+             ?? <i>Renderer Priority</i> = 0
+             ?? <i>Probe Anchor</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+             ?? <i>Light Probe Volume Override</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+             ?? <i>Scale In Lightmap</i> = 1,00
+             ?? <i>Receive GI</i> = 1
+             ?? <i>Preserve U Vs</i> = False
+             ?? <i>Ignore Normals For Chart Detection</i> = False
+             ?? <i>Important GI</i> = False
+             ?? <i>Stitch Lightmap Seams</i> = True
+             ?? <i>Minimum Chart Size</i> = 4
+             ?? <i>Auto UV Max Distance</i> = 0,50
+             ?? <i>Auto UV Max Angle</i> = 89,00
+             ?? <i>Lightmap Parameters</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+             ?? <i>Mask Interaction</i> = None
+         • <b>BoxCollider</b>
+             ?? <i>Material</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+             ?? <i>Layer Override Priority</i> = 0
+             ?? <i>Is Trigger</i> = False
+             ?? <i>Provides Contacts</i> = False
+      ??? table leg 1 [Active] (Layer: Default)
+         • <b>MeshFilter</b>
+             ?? <i>Mesh</i>: Cube (Mesh)
+         • <b>MeshRenderer</b>
+             ?? <i>Cast Shadows</i> = On
+             ?? <i>Receive Shadows</i> = True
+             ?? <i>Dynamic Occludee</i> = True
+             ?? <i>Static Shadow Caster</i> = False
+             ?? <i>Motion Vectors</i> = Per Object Motion
+             ?? <i>Light Probe Usage</i> = 1
+             ?? <i>Reflection Probe Usage</i> = 1
+             ?? <i>Ray Tracing Mode</i> = 2
+             ?? <i>Ray Trace Procedural</i> = False
+             ?? <i>Ray Tracing Accel Struct Build Flags Override</i> = False
+             ?? <i>Ray Tracing Accel Struct Build Flags</i> = 1
+             ?? <i>Small Mesh Culling</i> = True
+             ?? <i>Force Mesh Lod</i> = -1
+             ?? <i>Mesh Lod Selection Bias</i> = 0,00
+             ?? <i>Rendering Layer Mask</i> = 1
+             ?? <i>Renderer Priority</i> = 0
+             ?? <i>Probe Anchor</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+             ?? <i>Light Probe Volume Override</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+             ?? <i>Scale In Lightmap</i> = 1,00
+             ?? <i>Receive GI</i> = 1
+             ?? <i>Preserve U Vs</i> = False
+             ?? <i>Ignore Normals For Chart Detection</i> = False
+             ?? <i>Important GI</i> = False
+             ?? <i>Stitch Lightmap Seams</i> = True
+             ?? <i>Minimum Chart Size</i> = 4
+             ?? <i>Auto UV Max Distance</i> = 0,50
+             ?? <i>Auto UV Max Angle</i> = 89,00
+             ?? <i>Lightmap Parameters</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+             ?? <i>Mask Interaction</i> = None
+         • <b>BoxCollider</b>
+             ?? <i>Material</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+             ?? <i>Layer Override Priority</i> = 0
+             ?? <i>Is Trigger</i> = False
+             ?? <i>Provides Contacts</i> = False
+      ??? table leg 1 [Active] (Layer: Default)
+         • <b>MeshFilter</b>
+             ?? <i>Mesh</i>: Cube (Mesh)
+         • <b>MeshRenderer</b>
+             ?? <i>Cast Shadows</i> = On
+             ?? <i>Receive Shadows</i> = True
+             ?? <i>Dynamic Occludee</i> = True
+             ?? <i>Static Shadow Caster</i> = False
+             ?? <i>Motion Vectors</i> = Per Object Motion
+             ?? <i>Light Probe Usage</i> = 1
+             ?? <i>Reflection Probe Usage</i> = 1
+             ?? <i>Ray Tracing Mode</i> = 2
+             ?? <i>Ray Trace Procedural</i> = False
+             ?? <i>Ray Tracing Accel Struct Build Flags Override</i> = False
+             ?? <i>Ray Tracing Accel Struct Build Flags</i> = 1
+             ?? <i>Small Mesh Culling</i> = True
+             ?? <i>Force Mesh Lod</i> = -1
+             ?? <i>Mesh Lod Selection Bias</i> = 0,00
+             ?? <i>Rendering Layer Mask</i> = 1
+             ?? <i>Renderer Priority</i> = 0
+             ?? <i>Probe Anchor</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+             ?? <i>Light Probe Volume Override</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+             ?? <i>Scale In Lightmap</i> = 1,00
+             ?? <i>Receive GI</i> = 1
+             ?? <i>Preserve U Vs</i> = False
+             ?? <i>Ignore Normals For Chart Detection</i> = False
+             ?? <i>Important GI</i> = False
+             ?? <i>Stitch Lightmap Seams</i> = True
+             ?? <i>Minimum Chart Size</i> = 4
+             ?? <i>Auto UV Max Distance</i> = 0,50
+             ?? <i>Auto UV Max Angle</i> = 89,00
+             ?? <i>Lightmap Parameters</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+             ?? <i>Mask Interaction</i> = None
+         • <b>BoxCollider</b>
+             ?? <i>Material</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+             ?? <i>Layer Override Priority</i> = 0
+             ?? <i>Is Trigger</i> = False
+             ?? <i>Provides Contacts</i> = False
+      ??? table leg 1 [Active] (Layer: Default)
+         • <b>MeshFilter</b>
+             ?? <i>Mesh</i>: Cube (Mesh)
+         • <b>MeshRenderer</b>
+             ?? <i>Cast Shadows</i> = On
+             ?? <i>Receive Shadows</i> = True
+             ?? <i>Dynamic Occludee</i> = True
+             ?? <i>Static Shadow Caster</i> = False
+             ?? <i>Motion Vectors</i> = Per Object Motion
+             ?? <i>Light Probe Usage</i> = 1
+             ?? <i>Reflection Probe Usage</i> = 1
+             ?? <i>Ray Tracing Mode</i> = 2
+             ?? <i>Ray Trace Procedural</i> = False
+             ?? <i>Ray Tracing Accel Struct Build Flags Override</i> = False
+             ?? <i>Ray Tracing Accel Struct Build Flags</i> = 1
+             ?? <i>Small Mesh Culling</i> = True
+             ?? <i>Force Mesh Lod</i> = -1
+             ?? <i>Mesh Lod Selection Bias</i> = 0,00
+             ?? <i>Rendering Layer Mask</i> = 1
+             ?? <i>Renderer Priority</i> = 0
+             ?? <i>Probe Anchor</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+             ?? <i>Light Probe Volume Override</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+             ?? <i>Scale In Lightmap</i> = 1,00
+             ?? <i>Receive GI</i> = 1
+             ?? <i>Preserve U Vs</i> = False
+             ?? <i>Ignore Normals For Chart Detection</i> = False
+             ?? <i>Important GI</i> = False
+             ?? <i>Stitch Lightmap Seams</i> = True
+             ?? <i>Minimum Chart Size</i> = 4
+             ?? <i>Auto UV Max Distance</i> = 0,50
+             ?? <i>Auto UV Max Angle</i> = 89,00
+             ?? <i>Lightmap Parameters</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+             ?? <i>Mask Interaction</i> = None
+         • <b>BoxCollider</b>
+             ?? <i>Material</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+             ?? <i>Layer Override Priority</i> = 0
+             ?? <i>Is Trigger</i> = False
+             ?? <i>Provides Contacts</i> = False
+      ??? tabletop  [Active] (Layer: Default)
+         • <b>MeshFilter</b>
+             ?? <i>Mesh</i>: Cube (Mesh)
+         • <b>MeshRenderer</b>
+             ?? <i>Cast Shadows</i> = On
+             ?? <i>Receive Shadows</i> = True
+             ?? <i>Dynamic Occludee</i> = True
+             ?? <i>Static Shadow Caster</i> = False
+             ?? <i>Motion Vectors</i> = Per Object Motion
+             ?? <i>Light Probe Usage</i> = 1
+             ?? <i>Reflection Probe Usage</i> = 1
+             ?? <i>Ray Tracing Mode</i> = 2
+             ?? <i>Ray Trace Procedural</i> = False
+             ?? <i>Ray Tracing Accel Struct Build Flags Override</i> = False
+             ?? <i>Ray Tracing Accel Struct Build Flags</i> = 1
+             ?? <i>Small Mesh Culling</i> = True
+             ?? <i>Force Mesh Lod</i> = -1
+             ?? <i>Mesh Lod Selection Bias</i> = 0,00
+             ?? <i>Rendering Layer Mask</i> = 1
+             ?? <i>Renderer Priority</i> = 0
+             ?? <i>Probe Anchor</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+             ?? <i>Light Probe Volume Override</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+             ?? <i>Scale In Lightmap</i> = 1,00
+             ?? <i>Receive GI</i> = 1
+             ?? <i>Preserve U Vs</i> = False
+             ?? <i>Ignore Normals For Chart Detection</i> = False
+             ?? <i>Important GI</i> = False
+             ?? <i>Stitch Lightmap Seams</i> = True
+             ?? <i>Minimum Chart Size</i> = 4
+             ?? <i>Auto UV Max Distance</i> = 0,50
+             ?? <i>Auto UV Max Angle</i> = 89,00
+             ?? <i>Lightmap Parameters</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+             ?? <i>Mask Interaction</i> = None
+         • <b>BoxCollider</b>
+             ?? <i>Material</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+             ?? <i>Layer Override Priority</i> = 0
+             ?? <i>Is Trigger</i> = False
+             ?? <i>Provides Contacts</i> = False
+   ??? TV Right [Active] (Layer: Default)
+      ??? UI_MONITOR_RIGHT [Active] (Layer: Default)
+         ??? Canvas_RightMonitor [Active] (Layer: UI)
+            • <b>Canvas</b>
+                ?? <i>Render Mode</i> = World Space
+                ?? <i>Camera</i>: Main Camera (Camera)
+                ?? <i>Plane Distance</i> = 100,00
+                ?? <i>Pixel Perfect</i> = False
+                ?? <i>Receives Events</i> = True
+                ?? <i>Override Sorting</i> = False
+                ?? <i>Override Pixel Perfect</i> = False
+                ?? <i>Sorting Bucket Normalized Size</i> = 0,00
+                ?? <i>Vertex Color Always Gamma Space</i> = False
+                ?? <i>Additional Shader Channels Flag</i> = -1
+                ?? <i>Update Rect Transform For Standalone</i> = Enabled
+            • <b>CanvasScaler</b>
+                ?? <i>Ui Scale Mode</i> = Constant Pixel Size
+                ?? <i>Reference Pixels Per Unit</i> = 100,00
+                ?? <i>Scale Factor</i> = 1,00
+                ?? <i>Screen Match Mode</i> = Match Width Or Height
+                ?? <i>Match Width Or Height</i> = 0,00
+                ?? <i>Physical Unit</i> = Points
+                ?? <i>Fallback Screen DPI</i> = 96,00
+                ?? <i>Default Sprite DPI</i> = 96,00
+                ?? <i>Dynamic Pixels Per Unit</i> = 1,00
+                ?? <i>Preset Info Is World</i> = True
+            • <b>GraphicRaycaster</b>
+                ?? <i>Ignore Reversed Graphics</i> = True
+                ?? <i>Blocking Objects</i> = None
+            • <b>RightMonitorMapController</b>
+                ?? <i>Snapshot Btn Canvas Group</i>: Btn_TakeSnapshot   (CanvasGroup)
+                ?? <i>Take Snapshot Button</i>: Btn_TakeSnapshot   (Button)
+                ?? <i>Snapshot Display Image</i>: SnapshotDisplay (Image)
+                ?? <i>No Signal Placeholder</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+                ?? <i>Screen Flash Image</i>: FlashImage (Image)
+                ?? <i>Camera Status Text</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+                ?? <i>Target Building Text</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+            ??? FlashImage [Active] (Layer: UI)
+               • <b>Image</b>
+                   ?? <i>Material</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+                   ?? <i>Raycast Target</i> = True
+                   ?? <i>Maskable</i> = True
+                   ?? <i>Sprite</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+                   ?? <i>Type</i> = Simple
+                   ?? <i>Preserve Aspect</i> = False
+                   ?? <i>Fill Center</i> = True
+                   ?? <i>Fill Method</i> = Radial 360
+                   ?? <i>Fill Amount</i> = 1,00
+                   ?? <i>Fill Clockwise</i> = True
+                   ?? <i>Fill Origin</i> = 0
+                   ?? <i>Use Sprite Mesh</i> = False
+                   ?? <i>Pixels Per Unit Multiplier</i> = 1,00
+            ??? SnapshotDisplay [Active] (Layer: UI)
+               • <b>Image</b>
+                   ?? <i>Material</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+                   ?? <i>Raycast Target</i> = True
+                   ?? <i>Maskable</i> = True
+                   ?? <i>Sprite</i>: Background (Sprite)
+                   ?? <i>Type</i> = Sliced
+                   ?? <i>Preserve Aspect</i> = False
+                   ?? <i>Fill Center</i> = True
+                   ?? <i>Fill Method</i> = Radial 360
+                   ?? <i>Fill Amount</i> = 1,00
+                   ?? <i>Fill Clockwise</i> = True
+                   ?? <i>Fill Origin</i> = 0
+                   ?? <i>Use Sprite Mesh</i> = False
+                   ?? <i>Pixels Per Unit Multiplier</i> = 1,00
+            ??? Btn_TakeSnapshot   [Active] (Layer: UI)
+               • <b>Image</b>
+                   ?? <i>Material</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+                   ?? <i>Raycast Target</i> = True
+                   ?? <i>Maskable</i> = True
+                   ?? <i>Sprite</i>: UISprite (Sprite)
+                   ?? <i>Type</i> = Sliced
+                   ?? <i>Preserve Aspect</i> = False
+                   ?? <i>Fill Center</i> = True
+                   ?? <i>Fill Method</i> = Radial 360
+                   ?? <i>Fill Amount</i> = 1,00
+                   ?? <i>Fill Clockwise</i> = True
+                   ?? <i>Fill Origin</i> = 0
+                   ?? <i>Use Sprite Mesh</i> = False
+                   ?? <i>Pixels Per Unit Multiplier</i> = 1,00
+               • <b>Button</b>
+                   ?? <i>Transition</i> = Color Tint
+                   ?? <i>Interactable</i> = True
+                   ?? <i>Target Graphic</i>: Btn_TakeSnapshot   (Image)
+               • <b>CanvasGroup</b>
+                   ?? <i>Alpha</i> = 1,00
+                   ?? <i>Interactable</i> = True
+                   ?? <i>Blocks Raycasts</i> = True
+                   ?? <i>Ignore Parent Groups</i> = False
+               ??? Text (TMP) [Active] (Layer: UI)
+                  • <b>TextMeshProUGUI</b>
+                      ?? <i>Material</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+                      ?? <i>Raycast Target</i> = True
+                      ?? <i>Maskable</i> = True
+                      ?? <i>Text</i> = "Сделать снимок"
+                      ?? <i>Is Right To Left</i> = False
+                      ?? <i>Font Asset</i>: LiberationSans SDF (TMP_FontAsset)
+                      ?? <i>Shared Material</i>: LiberationSans SDF Material (Material)
+                      ?? <i>Font Material</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+                      ?? <i>Enable Vertex Gradient</i> = False
+                      ?? <i>Color Mode</i> = Four Corners Gradient
+                      ?? <i>Font Color Gradient Preset</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+                      ?? <i>Sprite Asset</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+                      ?? <i>Tint All Sprites</i> = False
+                      ?? <i>Style Sheet</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+                      ?? <i>Text Style Hash Code</i> = -1183493901
+                      ?? <i>Override Html Colors</i> = False
+                      ?? <i>Font Size</i> = 50,00
+                      ?? <i>Font Size Base</i> = 50,00
+                      ?? <i>Font Weight</i> = Regular
+                      ?? <i>Enable Auto Sizing</i> = False
+                      ?? <i>Font Size Min</i> = 18,00
+                      ?? <i>Font Size Max</i> = 72,00
+                      ?? <i>Font Style</i> = Normal
+                      ?? <i>Horizontal Alignment</i> = Center
+                      ?? <i>Vertical Alignment</i> = Middle
+                      ?? <i>Text Alignment</i> = Converted
+                      ?? <i>Character Spacing</i> = 0,00
+                      ?? <i>Character Horizontal Scale</i> = 1,00
+                      ?? <i>Word Spacing</i> = 0,00
+                      ?? <i>Line Spacing</i> = 0,00
+                      ?? <i>Line Spacing Max</i> = 0,00
+                      ?? <i>Paragraph Spacing</i> = 0,00
+                      ?? <i>Char Width Max Adj</i> = 0,00
+                      ?? <i>Text Wrapping Mode</i> = Normal
+                      ?? <i>Word Wrapping Ratios</i> = 0,40
+                      ?? <i>Overflow Mode</i> = Overflow
+                      ?? <i>Linked Text Component</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+                      ?? <i>Parent Linked Component</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+                      ?? <i>Enable Kerning</i> = False
+                      ?? <i>Enable Extra Padding</i> = False
+                      ?? <i>Check Padding Required</i> = False
+                      ?? <i>Is Rich Text</i> = True
+                      ?? <i>Emoji Fallback Support</i> = True
+                      ?? <i>Parse Ctrl Characters</i> = True
+                      ?? <i>Is Orthographic</i> = True
+                      ?? <i>Is Culling Enabled</i> = False
+                      ?? <i>Horizontal Mapping</i> = Character
+                      ?? <i>Vertical Mapping</i> = Character
+                      ?? <i>Uv Line Offset</i> = 0,00
+                      ?? <i>Geometry Sorting Order</i> = Normal
+                      ?? <i>Is Text Object Scale Static</i> = False
+                      ?? <i>Vertex Buffer Auto Size Reduction</i> = False
+                      ?? <i>Use Max Visible Descender</i> = True
+                      ?? <i>Page To Display</i> = 1
+                      ?? <i>Is Using Legacy Animation Component</i> = False
+                      ?? <i>Is Volumetric Text</i> = False
+                      ?? <i>Has Font Asset Changed</i> = False
+                      ?? <i>Base Material</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+                  ??? TMP SubMeshUI [LiberationSans SDF Material + LiberationSans SDF Atlas] [Active] (Layer: UI)
+                     • <b>LayoutElement</b>
+                         ?? <i>Ignore Layout</i> = True
+                         ?? <i>Min Width</i> = -1,00
+                         ?? <i>Min Height</i> = -1,00
+                         ?? <i>Preferred Width</i> = -1,00
+                         ?? <i>Preferred Height</i> = -1,00
+                         ?? <i>Flexible Width</i> = -1,00
+                         ?? <i>Flexible Height</i> = -1,00
+                         ?? <i>Layout Priority</i> = 1
+                     • <b>TMP_SubMeshUI</b>
+                         ?? <i>Material</i>: LiberationSans SDF Material + LiberationSans SDF Atlas (Material)
+                         ?? <i>Raycast Target</i> = True
+                         ?? <i>Maskable</i> = True
+                         ?? <i>Font Asset</i>: LiberationSans SDF - Fallback (TMP_FontAsset)
+                         ?? <i>Sprite Asset</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+                         ?? <i>Material</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+                         ?? <i>Shared Material</i>: LiberationSans SDF Material + LiberationSans SDF Atlas (Material)
+                         ?? <i>Is Default Material</i> = False
+                         ?? <i>Padding</i> = 1,25
+                         ?? <i>Text Component</i>: Text (TMP) (TextMeshProUGUI)
+                         ?? <i>Material Reference Index</i> = 1
+            ??? Panel_CityMap [Active] (Layer: UI)
+               • <b>Image</b>
+                   ?? <i>Material</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+                   ?? <i>Raycast Target</i> = False
+                   ?? <i>Maskable</i> = True
+                   ?? <i>Sprite</i>: Background (Sprite)
+                   ?? <i>Type</i> = Sliced
+                   ?? <i>Preserve Aspect</i> = False
+                   ?? <i>Fill Center</i> = True
+                   ?? <i>Fill Method</i> = Radial 360
+                   ?? <i>Fill Amount</i> = 1,00
+                   ?? <i>Fill Clockwise</i> = True
+                   ?? <i>Fill Origin</i> = 0
+                   ?? <i>Use Sprite Mesh</i> = False
+                   ?? <i>Pixels Per Unit Multiplier</i> = 1,00
+               ??? Camera_01 [Active] (Layer: UI)
+                  • <b>CameraPoint</b>
+                      ?? <i>Camera Name</i> = "Камера №1"
+                      ?? <i>Snapshot Sprite</i>: 8fb30f6602c76049c23b90c03d305bca_0 (Sprite)
+                      ?? <i>Outline Object</i>: OutlineImage   (GameObject)
+                      ?? <i>Button</i>: IconImage      (Button)
+                  ??? OutlineImage   [Disabled] (Layer: UI)
+                     • <b>Image</b>
+                         ?? <i>Material</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+                         ?? <i>Raycast Target</i> = True
+                         ?? <i>Maskable</i> = True
+                         ?? <i>Sprite</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+                         ?? <i>Type</i> = Simple
+                         ?? <i>Preserve Aspect</i> = False
+                         ?? <i>Fill Center</i> = True
+                         ?? <i>Fill Method</i> = Radial 360
+                         ?? <i>Fill Amount</i> = 1,00
+                         ?? <i>Fill Clockwise</i> = True
+                         ?? <i>Fill Origin</i> = 0
+                         ?? <i>Use Sprite Mesh</i> = False
+                         ?? <i>Pixels Per Unit Multiplier</i> = 1,00
+                  ??? IconImage      [Active] (Layer: UI)
+                     • <b>Image</b>
+                         ?? <i>Material</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+                         ?? <i>Raycast Target</i> = True
+                         ?? <i>Maskable</i> = True
+                         ?? <i>Sprite</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+                         ?? <i>Type</i> = Simple
+                         ?? <i>Preserve Aspect</i> = False
+                         ?? <i>Fill Center</i> = True
+                         ?? <i>Fill Method</i> = Radial 360
+                         ?? <i>Fill Amount</i> = 1,00
+                         ?? <i>Fill Clockwise</i> = True
+                         ?? <i>Fill Origin</i> = 0
+                         ?? <i>Use Sprite Mesh</i> = False
+                         ?? <i>Pixels Per Unit Multiplier</i> = 1,00
+                     • <b>Button</b>
+                         ?? <i>Transition</i> = Color Tint
+                         ?? <i>Interactable</i> = True
+                         ?? <i>Target Graphic</i>: IconImage      (Image)
+                  ??? Text [Active] (Layer: UI)
+                     • <b>TextMeshProUGUI</b>
+                         ?? <i>Material</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+                         ?? <i>Raycast Target</i> = False
+                         ?? <i>Maskable</i> = True
+                         ?? <i>Text</i> = "Камера№1"
+                         ?? <i>Is Right To Left</i> = False
+                         ?? <i>Font Asset</i>: LiberationSans SDF (TMP_FontAsset)
+                         ?? <i>Shared Material</i>: LiberationSans SDF Material (Material)
+                         ?? <i>Font Material</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+                         ?? <i>Enable Vertex Gradient</i> = False
+                         ?? <i>Color Mode</i> = Four Corners Gradient
+                         ?? <i>Font Color Gradient Preset</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+                         ?? <i>Sprite Asset</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+                         ?? <i>Tint All Sprites</i> = False
+                         ?? <i>Style Sheet</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+                         ?? <i>Text Style Hash Code</i> = -1183493901
+                         ?? <i>Override Html Colors</i> = False
+                         ?? <i>Font Size</i> = 24,00
+                         ?? <i>Font Size Base</i> = 24,00
+                         ?? <i>Font Weight</i> = Regular
+                         ?? <i>Enable Auto Sizing</i> = False
+                         ?? <i>Font Size Min</i> = 18,00
+                         ?? <i>Font Size Max</i> = 72,00
+                         ?? <i>Font Style</i> = Normal
+                         ?? <i>Horizontal Alignment</i> = Center
+                         ?? <i>Vertical Alignment</i> = Middle
+                         ?? <i>Text Alignment</i> = Converted
+                         ?? <i>Character Spacing</i> = 0,00
+                         ?? <i>Character Horizontal Scale</i> = 1,00
+                         ?? <i>Word Spacing</i> = 0,00
+                         ?? <i>Line Spacing</i> = 0,00
+                         ?? <i>Line Spacing Max</i> = 0,00
+                         ?? <i>Paragraph Spacing</i> = 0,00
+                         ?? <i>Char Width Max Adj</i> = 0,00
+                         ?? <i>Text Wrapping Mode</i> = Normal
+                         ?? <i>Word Wrapping Ratios</i> = 0,40
+                         ?? <i>Overflow Mode</i> = Overflow
+                         ?? <i>Linked Text Component</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+                         ?? <i>Parent Linked Component</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+                         ?? <i>Enable Kerning</i> = False
+                         ?? <i>Enable Extra Padding</i> = False
+                         ?? <i>Check Padding Required</i> = False
+                         ?? <i>Is Rich Text</i> = True
+                         ?? <i>Emoji Fallback Support</i> = True
+                         ?? <i>Parse Ctrl Characters</i> = True
+                         ?? <i>Is Orthographic</i> = True
+                         ?? <i>Is Culling Enabled</i> = False
+                         ?? <i>Horizontal Mapping</i> = Character
+                         ?? <i>Vertical Mapping</i> = Character
+                         ?? <i>Uv Line Offset</i> = 0,00
+                         ?? <i>Geometry Sorting Order</i> = Normal
+                         ?? <i>Is Text Object Scale Static</i> = False
+                         ?? <i>Vertex Buffer Auto Size Reduction</i> = False
+                         ?? <i>Use Max Visible Descender</i> = True
+                         ?? <i>Page To Display</i> = 1
+                         ?? <i>Is Using Legacy Animation Component</i> = False
+                         ?? <i>Is Volumetric Text</i> = False
+                         ?? <i>Has Font Asset Changed</i> = False
+                         ?? <i>Base Material</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+                     ??? TMP SubMeshUI [LiberationSans SDF Material + LiberationSans SDF Atlas] [Active] (Layer: UI)
+                        • <b>LayoutElement</b>
+                            ?? <i>Ignore Layout</i> = True
+                            ?? <i>Min Width</i> = -1,00
+                            ?? <i>Min Height</i> = -1,00
+                            ?? <i>Preferred Width</i> = -1,00
+                            ?? <i>Preferred Height</i> = -1,00
+                            ?? <i>Flexible Width</i> = -1,00
+                            ?? <i>Flexible Height</i> = -1,00
+                            ?? <i>Layout Priority</i> = 1
+                        • <b>TMP_SubMeshUI</b>
+                            ?? <i>Material</i>: LiberationSans SDF Material + LiberationSans SDF Atlas (Material)
+                            ?? <i>Raycast Target</i> = False
+                            ?? <i>Maskable</i> = True
+                            ?? <i>Font Asset</i>: LiberationSans SDF - Fallback (TMP_FontAsset)
+                            ?? <i>Sprite Asset</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+                            ?? <i>Material</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+                            ?? <i>Shared Material</i>: LiberationSans SDF Material + LiberationSans SDF Atlas (Material)
+                            ?? <i>Is Default Material</i> = False
+                            ?? <i>Padding</i> = 1,25
+                            ?? <i>Text Component</i>: Text (TextMeshProUGUI)
+                            ?? <i>Material Reference Index</i> = 1
+               ??? Camera_02 [Active] (Layer: UI)
+                  • <b>Image</b>
+                      ?? <i>Material</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+                      ?? <i>Raycast Target</i> = True
+                      ?? <i>Maskable</i> = True
+                      ?? <i>Sprite</i>: UISprite (Sprite)
+                      ?? <i>Type</i> = Sliced
+                      ?? <i>Preserve Aspect</i> = False
+                      ?? <i>Fill Center</i> = True
+                      ?? <i>Fill Method</i> = Radial 360
+                      ?? <i>Fill Amount</i> = 1,00
+                      ?? <i>Fill Clockwise</i> = True
+                      ?? <i>Fill Origin</i> = 0
+                      ?? <i>Use Sprite Mesh</i> = False
+                      ?? <i>Pixels Per Unit Multiplier</i> = 1,00
+                  • <b>CameraPoint</b>
+                      ?? <i>Camera Name</i> = "Камера №2"
+                      ?? <i>Snapshot Sprite</i>: 1487837888_0 (Sprite)
+                      ?? <i>Outline Object</i>: OutlineImage   (GameObject)
+                      ?? <i>Button</i>: IconImage      (Button)
+                  ??? OutlineImage   [Disabled] (Layer: UI)
+                     • <b>Image</b>
+                         ?? <i>Material</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+                         ?? <i>Raycast Target</i> = True
+                         ?? <i>Maskable</i> = True
+                         ?? <i>Sprite</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+                         ?? <i>Type</i> = Simple
+                         ?? <i>Preserve Aspect</i> = False
+                         ?? <i>Fill Center</i> = True
+                         ?? <i>Fill Method</i> = Radial 360
+                         ?? <i>Fill Amount</i> = 1,00
+                         ?? <i>Fill Clockwise</i> = True
+                         ?? <i>Fill Origin</i> = 0
+                         ?? <i>Use Sprite Mesh</i> = False
+                         ?? <i>Pixels Per Unit Multiplier</i> = 1,00
+                  ??? IconImage      [Active] (Layer: UI)
+                     • <b>Image</b>
+                         ?? <i>Material</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+                         ?? <i>Raycast Target</i> = True
+                         ?? <i>Maskable</i> = True
+                         ?? <i>Sprite</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+                         ?? <i>Type</i> = Simple
+                         ?? <i>Preserve Aspect</i> = False
+                         ?? <i>Fill Center</i> = True
+                         ?? <i>Fill Method</i> = Radial 360
+                         ?? <i>Fill Amount</i> = 1,00
+                         ?? <i>Fill Clockwise</i> = True
+                         ?? <i>Fill Origin</i> = 0
+                         ?? <i>Use Sprite Mesh</i> = False
+                         ?? <i>Pixels Per Unit Multiplier</i> = 1,00
+                     • <b>Button</b>
+                         ?? <i>Transition</i> = Color Tint
+                         ?? <i>Interactable</i> = True
+                         ?? <i>Target Graphic</i>: IconImage      (Image)
+                  ??? Text [Active] (Layer: UI)
+                     • <b>TextMeshProUGUI</b>
+                         ?? <i>Material</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+                         ?? <i>Raycast Target</i> = False
+                         ?? <i>Maskable</i> = True
+                         ?? <i>Text</i> = "Камера№2"
+                         ?? <i>Is Right To Left</i> = False
+                         ?? <i>Font Asset</i>: LiberationSans SDF (TMP_FontAsset)
+                         ?? <i>Shared Material</i>: LiberationSans SDF Material (Material)
+                         ?? <i>Font Material</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+                         ?? <i>Enable Vertex Gradient</i> = False
+                         ?? <i>Color Mode</i> = Four Corners Gradient
+                         ?? <i>Font Color Gradient Preset</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+                         ?? <i>Sprite Asset</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+                         ?? <i>Tint All Sprites</i> = False
+                         ?? <i>Style Sheet</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+                         ?? <i>Text Style Hash Code</i> = -1183493901
+                         ?? <i>Override Html Colors</i> = False
+                         ?? <i>Font Size</i> = 24,00
+                         ?? <i>Font Size Base</i> = 24,00
+                         ?? <i>Font Weight</i> = Regular
+                         ?? <i>Enable Auto Sizing</i> = False
+                         ?? <i>Font Size Min</i> = 18,00
+                         ?? <i>Font Size Max</i> = 72,00
+                         ?? <i>Font Style</i> = Normal
+                         ?? <i>Horizontal Alignment</i> = Center
+                         ?? <i>Vertical Alignment</i> = Middle
+                         ?? <i>Text Alignment</i> = Converted
+                         ?? <i>Character Spacing</i> = 0,00
+                         ?? <i>Character Horizontal Scale</i> = 1,00
+                         ?? <i>Word Spacing</i> = 0,00
+                         ?? <i>Line Spacing</i> = 0,00
+                         ?? <i>Line Spacing Max</i> = 0,00
+                         ?? <i>Paragraph Spacing</i> = 0,00
+                         ?? <i>Char Width Max Adj</i> = 0,00
+                         ?? <i>Text Wrapping Mode</i> = Normal
+                         ?? <i>Word Wrapping Ratios</i> = 0,40
+                         ?? <i>Overflow Mode</i> = Overflow
+                         ?? <i>Linked Text Component</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+                         ?? <i>Parent Linked Component</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+                         ?? <i>Enable Kerning</i> = False
+                         ?? <i>Enable Extra Padding</i> = False
+                         ?? <i>Check Padding Required</i> = False
+                         ?? <i>Is Rich Text</i> = True
+                         ?? <i>Emoji Fallback Support</i> = True
+                         ?? <i>Parse Ctrl Characters</i> = True
+                         ?? <i>Is Orthographic</i> = True
+                         ?? <i>Is Culling Enabled</i> = False
+                         ?? <i>Horizontal Mapping</i> = Character
+                         ?? <i>Vertical Mapping</i> = Character
+                         ?? <i>Uv Line Offset</i> = 0,00
+                         ?? <i>Geometry Sorting Order</i> = Normal
+                         ?? <i>Is Text Object Scale Static</i> = False
+                         ?? <i>Vertex Buffer Auto Size Reduction</i> = False
+                         ?? <i>Use Max Visible Descender</i> = True
+                         ?? <i>Page To Display</i> = 1
+                         ?? <i>Is Using Legacy Animation Component</i> = False
+                         ?? <i>Is Volumetric Text</i> = False
+                         ?? <i>Has Font Asset Changed</i> = False
+                         ?? <i>Base Material</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+                     ??? TMP SubMeshUI [LiberationSans SDF Material + LiberationSans SDF Atlas] [Active] (Layer: UI)
+                        • <b>LayoutElement</b>
+                            ?? <i>Ignore Layout</i> = True
+                            ?? <i>Min Width</i> = -1,00
+                            ?? <i>Min Height</i> = -1,00
+                            ?? <i>Preferred Width</i> = -1,00
+                            ?? <i>Preferred Height</i> = -1,00
+                            ?? <i>Flexible Width</i> = -1,00
+                            ?? <i>Flexible Height</i> = -1,00
+                            ?? <i>Layout Priority</i> = 1
+                        • <b>TMP_SubMeshUI</b>
+                            ?? <i>Material</i>: LiberationSans SDF Material + LiberationSans SDF Atlas (Material)
+                            ?? <i>Raycast Target</i> = False
+                            ?? <i>Maskable</i> = True
+                            ?? <i>Font Asset</i>: LiberationSans SDF - Fallback (TMP_FontAsset)
+                            ?? <i>Sprite Asset</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+                            ?? <i>Material</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+                            ?? <i>Shared Material</i>: LiberationSans SDF Material + LiberationSans SDF Atlas (Material)
+                            ?? <i>Is Default Material</i> = False
+                            ?? <i>Padding</i> = 1,25
+                            ?? <i>Text Component</i>: Text (TextMeshProUGUI)
+                            ?? <i>Material Reference Index</i> = 1
+               ??? Camera_03 [Active] (Layer: UI)
+                  • <b>Image</b>
+                      ?? <i>Material</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+                      ?? <i>Raycast Target</i> = True
+                      ?? <i>Maskable</i> = True
+                      ?? <i>Sprite</i>: UISprite (Sprite)
+                      ?? <i>Type</i> = Sliced
+                      ?? <i>Preserve Aspect</i> = False
+                      ?? <i>Fill Center</i> = True
+                      ?? <i>Fill Method</i> = Radial 360
+                      ?? <i>Fill Amount</i> = 1,00
+                      ?? <i>Fill Clockwise</i> = True
+                      ?? <i>Fill Origin</i> = 0
+                      ?? <i>Use Sprite Mesh</i> = False
+                      ?? <i>Pixels Per Unit Multiplier</i> = 1,00
+                  • <b>CameraPoint</b>
+                      ?? <i>Camera Name</i> = "Камера №3"
+                      ?? <i>Snapshot Sprite</i>: images-_5__0 (Sprite)
+                      ?? <i>Outline Object</i>: OutlineImage   (GameObject)
+                      ?? <i>Button</i>: IconImage      (Button)
+                  ??? OutlineImage   [Disabled] (Layer: UI)
+                     • <b>Image</b>
+                         ?? <i>Material</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+                         ?? <i>Raycast Target</i> = True
+                         ?? <i>Maskable</i> = True
+                         ?? <i>Sprite</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+                         ?? <i>Type</i> = Simple
+                         ?? <i>Preserve Aspect</i> = False
+                         ?? <i>Fill Center</i> = True
+                         ?? <i>Fill Method</i> = Radial 360
+                         ?? <i>Fill Amount</i> = 1,00
+                         ?? <i>Fill Clockwise</i> = True
+                         ?? <i>Fill Origin</i> = 0
+                         ?? <i>Use Sprite Mesh</i> = False
+                         ?? <i>Pixels Per Unit Multiplier</i> = 1,00
+                  ??? IconImage      [Active] (Layer: UI)
+                     • <b>Image</b>
+                         ?? <i>Material</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+                         ?? <i>Raycast Target</i> = True
+                         ?? <i>Maskable</i> = True
+                         ?? <i>Sprite</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+                         ?? <i>Type</i> = Simple
+                         ?? <i>Preserve Aspect</i> = False
+                         ?? <i>Fill Center</i> = True
+                         ?? <i>Fill Method</i> = Radial 360
+                         ?? <i>Fill Amount</i> = 1,00
+                         ?? <i>Fill Clockwise</i> = True
+                         ?? <i>Fill Origin</i> = 0
+                         ?? <i>Use Sprite Mesh</i> = False
+                         ?? <i>Pixels Per Unit Multiplier</i> = 1,00
+                     • <b>Button</b>
+                         ?? <i>Transition</i> = Color Tint
+                         ?? <i>Interactable</i> = True
+                         ?? <i>Target Graphic</i>: IconImage      (Image)
+                  ??? Text [Active] (Layer: UI)
+                     • <b>TextMeshProUGUI</b>
+                         ?? <i>Material</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+                         ?? <i>Raycast Target</i> = False
+                         ?? <i>Maskable</i> = True
+                         ?? <i>Text</i> = "Камера№3"
+                         ?? <i>Is Right To Left</i> = False
+                         ?? <i>Font Asset</i>: LiberationSans SDF (TMP_FontAsset)
+                         ?? <i>Shared Material</i>: LiberationSans SDF Material (Material)
+                         ?? <i>Font Material</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+                         ?? <i>Enable Vertex Gradient</i> = False
+                         ?? <i>Color Mode</i> = Four Corners Gradient
+                         ?? <i>Font Color Gradient Preset</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+                         ?? <i>Sprite Asset</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+                         ?? <i>Tint All Sprites</i> = False
+                         ?? <i>Style Sheet</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+                         ?? <i>Text Style Hash Code</i> = -1183493901
+                         ?? <i>Override Html Colors</i> = False
+                         ?? <i>Font Size</i> = 24,00
+                         ?? <i>Font Size Base</i> = 24,00
+                         ?? <i>Font Weight</i> = Regular
+                         ?? <i>Enable Auto Sizing</i> = False
+                         ?? <i>Font Size Min</i> = 18,00
+                         ?? <i>Font Size Max</i> = 72,00
+                         ?? <i>Font Style</i> = Normal
+                         ?? <i>Horizontal Alignment</i> = Center
+                         ?? <i>Vertical Alignment</i> = Middle
+                         ?? <i>Text Alignment</i> = Converted
+                         ?? <i>Character Spacing</i> = 0,00
+                         ?? <i>Character Horizontal Scale</i> = 1,00
+                         ?? <i>Word Spacing</i> = 0,00
+                         ?? <i>Line Spacing</i> = 0,00
+                         ?? <i>Line Spacing Max</i> = 0,00
+                         ?? <i>Paragraph Spacing</i> = 0,00
+                         ?? <i>Char Width Max Adj</i> = 0,00
+                         ?? <i>Text Wrapping Mode</i> = Normal
+                         ?? <i>Word Wrapping Ratios</i> = 0,40
+                         ?? <i>Overflow Mode</i> = Overflow
+                         ?? <i>Linked Text Component</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+                         ?? <i>Parent Linked Component</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+                         ?? <i>Enable Kerning</i> = False
+                         ?? <i>Enable Extra Padding</i> = False
+                         ?? <i>Check Padding Required</i> = False
+                         ?? <i>Is Rich Text</i> = True
+                         ?? <i>Emoji Fallback Support</i> = True
+                         ?? <i>Parse Ctrl Characters</i> = True
+                         ?? <i>Is Orthographic</i> = True
+                         ?? <i>Is Culling Enabled</i> = False
+                         ?? <i>Horizontal Mapping</i> = Character
+                         ?? <i>Vertical Mapping</i> = Character
+                         ?? <i>Uv Line Offset</i> = 0,00
+                         ?? <i>Geometry Sorting Order</i> = Normal
+                         ?? <i>Is Text Object Scale Static</i> = False
+                         ?? <i>Vertex Buffer Auto Size Reduction</i> = False
+                         ?? <i>Use Max Visible Descender</i> = True
+                         ?? <i>Page To Display</i> = 1
+                         ?? <i>Is Using Legacy Animation Component</i> = False
+                         ?? <i>Is Volumetric Text</i> = False
+                         ?? <i>Has Font Asset Changed</i> = False
+                         ?? <i>Base Material</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+                     ??? TMP SubMeshUI [LiberationSans SDF Material + LiberationSans SDF Atlas] [Active] (Layer: UI)
+                        • <b>LayoutElement</b>
+                            ?? <i>Ignore Layout</i> = True
+                            ?? <i>Min Width</i> = -1,00
+                            ?? <i>Min Height</i> = -1,00
+                            ?? <i>Preferred Width</i> = -1,00
+                            ?? <i>Preferred Height</i> = -1,00
+                            ?? <i>Flexible Width</i> = -1,00
+                            ?? <i>Flexible Height</i> = -1,00
+                            ?? <i>Layout Priority</i> = 1
+                        • <b>TMP_SubMeshUI</b>
+                            ?? <i>Material</i>: LiberationSans SDF Material + LiberationSans SDF Atlas (Material)
+                            ?? <i>Raycast Target</i> = False
+                            ?? <i>Maskable</i> = True
+                            ?? <i>Font Asset</i>: LiberationSans SDF - Fallback (TMP_FontAsset)
+                            ?? <i>Sprite Asset</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+                            ?? <i>Material</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+                            ?? <i>Shared Material</i>: LiberationSans SDF Material + LiberationSans SDF Atlas (Material)
+                            ?? <i>Is Default Material</i> = False
+                            ?? <i>Padding</i> = 1,25
+                            ?? <i>Text Component</i>: Text (TextMeshProUGUI)
+                            ?? <i>Material Reference Index</i> = 1
+               ??? Camera_04 [Active] (Layer: UI)
+                  • <b>Image</b>
+                      ?? <i>Material</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+                      ?? <i>Raycast Target</i> = True
+                      ?? <i>Maskable</i> = True
+                      ?? <i>Sprite</i>: UISprite (Sprite)
+                      ?? <i>Type</i> = Sliced
+                      ?? <i>Preserve Aspect</i> = False
+                      ?? <i>Fill Center</i> = True
+                      ?? <i>Fill Method</i> = Radial 360
+                      ?? <i>Fill Amount</i> = 1,00
+                      ?? <i>Fill Clockwise</i> = True
+                      ?? <i>Fill Origin</i> = 0
+                      ?? <i>Use Sprite Mesh</i> = False
+                      ?? <i>Pixels Per Unit Multiplier</i> = 1,00
+                  • <b>CameraPoint</b>
+                      ?? <i>Camera Name</i> = "Камера №4"
+                      ?? <i>Snapshot Sprite</i>: images-_7__0 (Sprite)
+                      ?? <i>Outline Object</i>: OutlineImage   (GameObject)
+                      ?? <i>Button</i>: IconImage      (Button)
+                  ??? OutlineImage   [Disabled] (Layer: UI)
+                     • <b>Image</b>
+                         ?? <i>Material</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+                         ?? <i>Raycast Target</i> = True
+                         ?? <i>Maskable</i> = True
+                         ?? <i>Sprite</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+                         ?? <i>Type</i> = Simple
+                         ?? <i>Preserve Aspect</i> = False
+                         ?? <i>Fill Center</i> = True
+                         ?? <i>Fill Method</i> = Radial 360
+                         ?? <i>Fill Amount</i> = 1,00
+                         ?? <i>Fill Clockwise</i> = True
+                         ?? <i>Fill Origin</i> = 0
+                         ?? <i>Use Sprite Mesh</i> = False
+                         ?? <i>Pixels Per Unit Multiplier</i> = 1,00
+                  ??? IconImage      [Active] (Layer: UI)
+                     • <b>Image</b>
+                         ?? <i>Material</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+                         ?? <i>Raycast Target</i> = True
+                         ?? <i>Maskable</i> = True
+                         ?? <i>Sprite</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+                         ?? <i>Type</i> = Simple
+                         ?? <i>Preserve Aspect</i> = False
+                         ?? <i>Fill Center</i> = True
+                         ?? <i>Fill Method</i> = Radial 360
+                         ?? <i>Fill Amount</i> = 1,00
+                         ?? <i>Fill Clockwise</i> = True
+                         ?? <i>Fill Origin</i> = 0
+                         ?? <i>Use Sprite Mesh</i> = False
+                         ?? <i>Pixels Per Unit Multiplier</i> = 1,00
+                     • <b>Button</b>
+                         ?? <i>Transition</i> = Color Tint
+                         ?? <i>Interactable</i> = True
+                         ?? <i>Target Graphic</i>: IconImage      (Image)
+                  ??? Text [Active] (Layer: UI)
+                     • <b>TextMeshProUGUI</b>
+                         ?? <i>Material</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+                         ?? <i>Raycast Target</i> = False
+                         ?? <i>Maskable</i> = True
+                         ?? <i>Text</i> = "Камера№4"
+                         ?? <i>Is Right To Left</i> = False
+                         ?? <i>Font Asset</i>: LiberationSans SDF (TMP_FontAsset)
+                         ?? <i>Shared Material</i>: LiberationSans SDF Material (Material)
+                         ?? <i>Font Material</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+                         ?? <i>Enable Vertex Gradient</i> = False
+                         ?? <i>Color Mode</i> = Four Corners Gradient
+                         ?? <i>Font Color Gradient Preset</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+                         ?? <i>Sprite Asset</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+                         ?? <i>Tint All Sprites</i> = False
+                         ?? <i>Style Sheet</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+                         ?? <i>Text Style Hash Code</i> = -1183493901
+                         ?? <i>Override Html Colors</i> = False
+                         ?? <i>Font Size</i> = 24,00
+                         ?? <i>Font Size Base</i> = 24,00
+                         ?? <i>Font Weight</i> = Regular
+                         ?? <i>Enable Auto Sizing</i> = False
+                         ?? <i>Font Size Min</i> = 18,00
+                         ?? <i>Font Size Max</i> = 72,00
+                         ?? <i>Font Style</i> = Normal
+                         ?? <i>Horizontal Alignment</i> = Center
+                         ?? <i>Vertical Alignment</i> = Middle
+                         ?? <i>Text Alignment</i> = Converted
+                         ?? <i>Character Spacing</i> = 0,00
+                         ?? <i>Character Horizontal Scale</i> = 1,00
+                         ?? <i>Word Spacing</i> = 0,00
+                         ?? <i>Line Spacing</i> = 0,00
+                         ?? <i>Line Spacing Max</i> = 0,00
+                         ?? <i>Paragraph Spacing</i> = 0,00
+                         ?? <i>Char Width Max Adj</i> = 0,00
+                         ?? <i>Text Wrapping Mode</i> = Normal
+                         ?? <i>Word Wrapping Ratios</i> = 0,40
+                         ?? <i>Overflow Mode</i> = Overflow
+                         ?? <i>Linked Text Component</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+                         ?? <i>Parent Linked Component</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+                         ?? <i>Enable Kerning</i> = False
+                         ?? <i>Enable Extra Padding</i> = False
+                         ?? <i>Check Padding Required</i> = False
+                         ?? <i>Is Rich Text</i> = True
+                         ?? <i>Emoji Fallback Support</i> = True
+                         ?? <i>Parse Ctrl Characters</i> = True
+                         ?? <i>Is Orthographic</i> = True
+                         ?? <i>Is Culling Enabled</i> = False
+                         ?? <i>Horizontal Mapping</i> = Character
+                         ?? <i>Vertical Mapping</i> = Character
+                         ?? <i>Uv Line Offset</i> = 0,00
+                         ?? <i>Geometry Sorting Order</i> = Normal
+                         ?? <i>Is Text Object Scale Static</i> = False
+                         ?? <i>Vertex Buffer Auto Size Reduction</i> = False
+                         ?? <i>Use Max Visible Descender</i> = True
+                         ?? <i>Page To Display</i> = 1
+                         ?? <i>Is Using Legacy Animation Component</i> = False
+                         ?? <i>Is Volumetric Text</i> = False
+                         ?? <i>Has Font Asset Changed</i> = False
+                         ?? <i>Base Material</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+                     ??? TMP SubMeshUI [LiberationSans SDF Material + LiberationSans SDF Atlas] [Active] (Layer: UI)
+                        • <b>LayoutElement</b>
+                            ?? <i>Ignore Layout</i> = True
+                            ?? <i>Min Width</i> = -1,00
+                            ?? <i>Min Height</i> = -1,00
+                            ?? <i>Preferred Width</i> = -1,00
+                            ?? <i>Preferred Height</i> = -1,00
+                            ?? <i>Flexible Width</i> = -1,00
+                            ?? <i>Flexible Height</i> = -1,00
+                            ?? <i>Layout Priority</i> = 1
+                        • <b>TMP_SubMeshUI</b>
+                            ?? <i>Material</i>: LiberationSans SDF Material + LiberationSans SDF Atlas (Material)
+                            ?? <i>Raycast Target</i> = False
+                            ?? <i>Maskable</i> = True
+                            ?? <i>Font Asset</i>: LiberationSans SDF - Fallback (TMP_FontAsset)
+                            ?? <i>Sprite Asset</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+                            ?? <i>Material</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+                            ?? <i>Shared Material</i>: LiberationSans SDF Material + LiberationSans SDF Atlas (Material)
+                            ?? <i>Is Default Material</i> = False
+                            ?? <i>Padding</i> = 1,25
+                            ?? <i>Text Component</i>: Text (TextMeshProUGUI)
+                            ?? <i>Material Reference Index</i> = 1
+               ??? Building_01 [Active] (Layer: UI)
+                  • <b>BuildingTarget</b>
+                      ?? <i>Building Name</i> = "Здание №1"
+                      ?? <i>Sector Code</i> = "Сектор Б-3"
+                      ?? <i>Outline Object</i>: Outline Object (GameObject)
+                      ?? <i>Button</i>: BuildingImage (Button)
+                  ??? Outline Object [Disabled] (Layer: UI)
+                     • <b>Image</b>
+                         ?? <i>Material</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+                         ?? <i>Raycast Target</i> = True
+                         ?? <i>Maskable</i> = True
+                         ?? <i>Sprite</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+                         ?? <i>Type</i> = Simple
+                         ?? <i>Preserve Aspect</i> = False
+                         ?? <i>Fill Center</i> = True
+                         ?? <i>Fill Method</i> = Radial 360
+                         ?? <i>Fill Amount</i> = 1,00
+                         ?? <i>Fill Clockwise</i> = True
+                         ?? <i>Fill Origin</i> = 0
+                         ?? <i>Use Sprite Mesh</i> = False
+                         ?? <i>Pixels Per Unit Multiplier</i> = 1,00
+                  ??? BuildingImage [Active] (Layer: UI)
+                     • <b>Image</b>
+                         ?? <i>Material</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+                         ?? <i>Raycast Target</i> = True
+                         ?? <i>Maskable</i> = True
+                         ?? <i>Sprite</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+                         ?? <i>Type</i> = Simple
+                         ?? <i>Preserve Aspect</i> = False
+                         ?? <i>Fill Center</i> = True
+                         ?? <i>Fill Method</i> = Radial 360
+                         ?? <i>Fill Amount</i> = 1,00
+                         ?? <i>Fill Clockwise</i> = True
+                         ?? <i>Fill Origin</i> = 0
+                         ?? <i>Use Sprite Mesh</i> = False
+                         ?? <i>Pixels Per Unit Multiplier</i> = 1,00
+                     • <b>Button</b>
+                         ?? <i>Transition</i> = Color Tint
+                         ?? <i>Interactable</i> = True
+                         ?? <i>Target Graphic</i>: BuildingImage (Image)
+                  ??? Text (TMP) [Active] (Layer: UI)
+                     • <b>TextMeshProUGUI</b>
+                         ?? <i>Material</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+                         ?? <i>Raycast Target</i> = False
+                         ?? <i>Maskable</i> = True
+                         ?? <i>Text</i> = "Здание №1"
+                         ?? <i>Is Right To Left</i> = False
+                         ?? <i>Font Asset</i>: LiberationSans SDF (TMP_FontAsset)
+                         ?? <i>Shared Material</i>: LiberationSans SDF Material (Material)
+                         ?? <i>Font Material</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+                         ?? <i>Enable Vertex Gradient</i> = False
+                         ?? <i>Color Mode</i> = Four Corners Gradient
+                         ?? <i>Font Color Gradient Preset</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+                         ?? <i>Sprite Asset</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+                         ?? <i>Tint All Sprites</i> = False
+                         ?? <i>Style Sheet</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+                         ?? <i>Text Style Hash Code</i> = -1183493901
+                         ?? <i>Override Html Colors</i> = False
+                         ?? <i>Font Size</i> = 36,00
+                         ?? <i>Font Size Base</i> = 36,00
+                         ?? <i>Font Weight</i> = Regular
+                         ?? <i>Enable Auto Sizing</i> = False
+                         ?? <i>Font Size Min</i> = 18,00
+                         ?? <i>Font Size Max</i> = 72,00
+                         ?? <i>Font Style</i> = Normal
+                         ?? <i>Horizontal Alignment</i> = Center
+                         ?? <i>Vertical Alignment</i> = Middle
+                         ?? <i>Text Alignment</i> = Converted
+                         ?? <i>Character Spacing</i> = 0,00
+                         ?? <i>Character Horizontal Scale</i> = 1,00
+                         ?? <i>Word Spacing</i> = 0,00
+                         ?? <i>Line Spacing</i> = 0,00
+                         ?? <i>Line Spacing Max</i> = 0,00
+                         ?? <i>Paragraph Spacing</i> = 0,00
+                         ?? <i>Char Width Max Adj</i> = 0,00
+                         ?? <i>Text Wrapping Mode</i> = Normal
+                         ?? <i>Word Wrapping Ratios</i> = 0,40
+                         ?? <i>Overflow Mode</i> = Overflow
+                         ?? <i>Linked Text Component</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+                         ?? <i>Parent Linked Component</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+                         ?? <i>Enable Kerning</i> = False
+                         ?? <i>Enable Extra Padding</i> = False
+                         ?? <i>Check Padding Required</i> = False
+                         ?? <i>Is Rich Text</i> = True
+                         ?? <i>Emoji Fallback Support</i> = True
+                         ?? <i>Parse Ctrl Characters</i> = True
+                         ?? <i>Is Orthographic</i> = True
+                         ?? <i>Is Culling Enabled</i> = False
+                         ?? <i>Horizontal Mapping</i> = Character
+                         ?? <i>Vertical Mapping</i> = Character
+                         ?? <i>Uv Line Offset</i> = 0,00
+                         ?? <i>Geometry Sorting Order</i> = Normal
+                         ?? <i>Is Text Object Scale Static</i> = False
+                         ?? <i>Vertex Buffer Auto Size Reduction</i> = False
+                         ?? <i>Use Max Visible Descender</i> = True
+                         ?? <i>Page To Display</i> = 1
+                         ?? <i>Is Using Legacy Animation Component</i> = False
+                         ?? <i>Is Volumetric Text</i> = False
+                         ?? <i>Has Font Asset Changed</i> = False
+                         ?? <i>Base Material</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+                     ??? TMP SubMeshUI [LiberationSans SDF Material + LiberationSans SDF Atlas] [Active] (Layer: UI)
+                        • <b>LayoutElement</b>
+                            ?? <i>Ignore Layout</i> = True
+                            ?? <i>Min Width</i> = -1,00
+                            ?? <i>Min Height</i> = -1,00
+                            ?? <i>Preferred Width</i> = -1,00
+                            ?? <i>Preferred Height</i> = -1,00
+                            ?? <i>Flexible Width</i> = -1,00
+                            ?? <i>Flexible Height</i> = -1,00
+                            ?? <i>Layout Priority</i> = 1
+                        • <b>TMP_SubMeshUI</b>
+                            ?? <i>Material</i>: LiberationSans SDF Material + LiberationSans SDF Atlas (Material)
+                            ?? <i>Raycast Target</i> = False
+                            ?? <i>Maskable</i> = True
+                            ?? <i>Font Asset</i>: LiberationSans SDF - Fallback (TMP_FontAsset)
+                            ?? <i>Sprite Asset</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+                            ?? <i>Material</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+                            ?? <i>Shared Material</i>: LiberationSans SDF Material + LiberationSans SDF Atlas (Material)
+                            ?? <i>Is Default Material</i> = False
+                            ?? <i>Padding</i> = 1,25
+                            ?? <i>Text Component</i>: Text (TMP) (TextMeshProUGUI)
+                            ?? <i>Material Reference Index</i> = 1
+               ??? Building_02 [Active] (Layer: UI)
+                  • <b>BuildingTarget</b>
+                      ?? <i>Building Name</i> = "Здание №2"
+                      ?? <i>Sector Code</i> = "Сектор Д-6"
+                      ?? <i>Outline Object</i>: Outline Object (GameObject)
+                      ?? <i>Button</i>: BuildingImage (Button)
+                  ??? Outline Object [Disabled] (Layer: UI)
+                     • <b>Image</b>
+                         ?? <i>Material</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+                         ?? <i>Raycast Target</i> = True
+                         ?? <i>Maskable</i> = True
+                         ?? <i>Sprite</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+                         ?? <i>Type</i> = Simple
+                         ?? <i>Preserve Aspect</i> = False
+                         ?? <i>Fill Center</i> = True
+                         ?? <i>Fill Method</i> = Radial 360
+                         ?? <i>Fill Amount</i> = 1,00
+                         ?? <i>Fill Clockwise</i> = True
+                         ?? <i>Fill Origin</i> = 0
+                         ?? <i>Use Sprite Mesh</i> = False
+                         ?? <i>Pixels Per Unit Multiplier</i> = 1,00
+                  ??? BuildingImage [Active] (Layer: UI)
+                     • <b>Image</b>
+                         ?? <i>Material</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+                         ?? <i>Raycast Target</i> = True
+                         ?? <i>Maskable</i> = True
+                         ?? <i>Sprite</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+                         ?? <i>Type</i> = Simple
+                         ?? <i>Preserve Aspect</i> = False
+                         ?? <i>Fill Center</i> = True
+                         ?? <i>Fill Method</i> = Radial 360
+                         ?? <i>Fill Amount</i> = 1,00
+                         ?? <i>Fill Clockwise</i> = True
+                         ?? <i>Fill Origin</i> = 0
+                         ?? <i>Use Sprite Mesh</i> = False
+                         ?? <i>Pixels Per Unit Multiplier</i> = 1,00
+                     • <b>Button</b>
+                         ?? <i>Transition</i> = Color Tint
+                         ?? <i>Interactable</i> = True
+                         ?? <i>Target Graphic</i>: BuildingImage (Image)
+                  ??? Text (TMP) [Active] (Layer: UI)
+                     • <b>TextMeshProUGUI</b>
+                         ?? <i>Material</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+                         ?? <i>Raycast Target</i> = False
+                         ?? <i>Maskable</i> = True
+                         ?? <i>Text</i> = "Здание №2"
+                         ?? <i>Is Right To Left</i> = False
+                         ?? <i>Font Asset</i>: LiberationSans SDF (TMP_FontAsset)
+                         ?? <i>Shared Material</i>: LiberationSans SDF Material (Material)
+                         ?? <i>Font Material</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+                         ?? <i>Enable Vertex Gradient</i> = False
+                         ?? <i>Color Mode</i> = Four Corners Gradient
+                         ?? <i>Font Color Gradient Preset</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+                         ?? <i>Sprite Asset</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+                         ?? <i>Tint All Sprites</i> = False
+                         ?? <i>Style Sheet</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+                         ?? <i>Text Style Hash Code</i> = -1183493901
+                         ?? <i>Override Html Colors</i> = False
+                         ?? <i>Font Size</i> = 36,00
+                         ?? <i>Font Size Base</i> = 36,00
+                         ?? <i>Font Weight</i> = Regular
+                         ?? <i>Enable Auto Sizing</i> = False
+                         ?? <i>Font Size Min</i> = 18,00
+                         ?? <i>Font Size Max</i> = 72,00
+                         ?? <i>Font Style</i> = Normal
+                         ?? <i>Horizontal Alignment</i> = Center
+                         ?? <i>Vertical Alignment</i> = Middle
+                         ?? <i>Text Alignment</i> = Converted
+                         ?? <i>Character Spacing</i> = 0,00
+                         ?? <i>Character Horizontal Scale</i> = 1,00
+                         ?? <i>Word Spacing</i> = 0,00
+                         ?? <i>Line Spacing</i> = 0,00
+                         ?? <i>Line Spacing Max</i> = 0,00
+                         ?? <i>Paragraph Spacing</i> = 0,00
+                         ?? <i>Char Width Max Adj</i> = 0,00
+                         ?? <i>Text Wrapping Mode</i> = Normal
+                         ?? <i>Word Wrapping Ratios</i> = 0,40
+                         ?? <i>Overflow Mode</i> = Overflow
+                         ?? <i>Linked Text Component</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+                         ?? <i>Parent Linked Component</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+                         ?? <i>Enable Kerning</i> = False
+                         ?? <i>Enable Extra Padding</i> = False
+                         ?? <i>Check Padding Required</i> = False
+                         ?? <i>Is Rich Text</i> = True
+                         ?? <i>Emoji Fallback Support</i> = True
+                         ?? <i>Parse Ctrl Characters</i> = True
+                         ?? <i>Is Orthographic</i> = True
+                         ?? <i>Is Culling Enabled</i> = False
+                         ?? <i>Horizontal Mapping</i> = Character
+                         ?? <i>Vertical Mapping</i> = Character
+                         ?? <i>Uv Line Offset</i> = 0,00
+                         ?? <i>Geometry Sorting Order</i> = Normal
+                         ?? <i>Is Text Object Scale Static</i> = False
+                         ?? <i>Vertex Buffer Auto Size Reduction</i> = False
+                         ?? <i>Use Max Visible Descender</i> = True
+                         ?? <i>Page To Display</i> = 1
+                         ?? <i>Is Using Legacy Animation Component</i> = False
+                         ?? <i>Is Volumetric Text</i> = False
+                         ?? <i>Has Font Asset Changed</i> = False
+                         ?? <i>Base Material</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+                     ??? TMP SubMeshUI [LiberationSans SDF Material + LiberationSans SDF Atlas] [Active] (Layer: UI)
+                        • <b>LayoutElement</b>
+                            ?? <i>Ignore Layout</i> = True
+                            ?? <i>Min Width</i> = -1,00
+                            ?? <i>Min Height</i> = -1,00
+                            ?? <i>Preferred Width</i> = -1,00
+                            ?? <i>Preferred Height</i> = -1,00
+                            ?? <i>Flexible Width</i> = -1,00
+                            ?? <i>Flexible Height</i> = -1,00
+                            ?? <i>Layout Priority</i> = 1
+                        • <b>TMP_SubMeshUI</b>
+                            ?? <i>Material</i>: LiberationSans SDF Material + LiberationSans SDF Atlas (Material)
+                            ?? <i>Raycast Target</i> = False
+                            ?? <i>Maskable</i> = True
+                            ?? <i>Font Asset</i>: LiberationSans SDF - Fallback (TMP_FontAsset)
+                            ?? <i>Sprite Asset</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+                            ?? <i>Material</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+                            ?? <i>Shared Material</i>: LiberationSans SDF Material + LiberationSans SDF Atlas (Material)
+                            ?? <i>Is Default Material</i> = False
+                            ?? <i>Padding</i> = 1,25
+                            ?? <i>Text Component</i>: Text (TMP) (TextMeshProUGUI)
+                            ?? <i>Material Reference Index</i> = 1
+      ??? monitor [Active] (Layer: Default)
+         • <b>MeshFilter</b>
+             ?? <i>Mesh</i>: Cube (Mesh)
+         • <b>MeshRenderer</b>
+             ?? <i>Cast Shadows</i> = On
+             ?? <i>Receive Shadows</i> = True
+             ?? <i>Dynamic Occludee</i> = True
+             ?? <i>Static Shadow Caster</i> = False
+             ?? <i>Motion Vectors</i> = Per Object Motion
+             ?? <i>Light Probe Usage</i> = 1
+             ?? <i>Reflection Probe Usage</i> = 1
+             ?? <i>Ray Tracing Mode</i> = 2
+             ?? <i>Ray Trace Procedural</i> = False
+             ?? <i>Ray Tracing Accel Struct Build Flags Override</i> = False
+             ?? <i>Ray Tracing Accel Struct Build Flags</i> = 1
+             ?? <i>Small Mesh Culling</i> = True
+             ?? <i>Force Mesh Lod</i> = -1
+             ?? <i>Mesh Lod Selection Bias</i> = 0,00
+             ?? <i>Rendering Layer Mask</i> = 1
+             ?? <i>Renderer Priority</i> = 0
+             ?? <i>Probe Anchor</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+             ?? <i>Light Probe Volume Override</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+             ?? <i>Scale In Lightmap</i> = 1,00
+             ?? <i>Receive GI</i> = 1
+             ?? <i>Preserve U Vs</i> = False
+             ?? <i>Ignore Normals For Chart Detection</i> = False
+             ?? <i>Important GI</i> = False
+             ?? <i>Stitch Lightmap Seams</i> = True
+             ?? <i>Minimum Chart Size</i> = 4
+             ?? <i>Auto UV Max Distance</i> = 0,50
+             ?? <i>Auto UV Max Angle</i> = 89,00
+             ?? <i>Lightmap Parameters</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+             ?? <i>Mask Interaction</i> = None
+         • <b>BoxCollider</b>
+             ?? <i>Material</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+             ?? <i>Layer Override Priority</i> = 0
+             ?? <i>Is Trigger</i> = False
+             ?? <i>Provides Contacts</i> = False
+      ??? monitor stand 1 [Active] (Layer: Default)
+         • <b>MeshFilter</b>
+             ?? <i>Mesh</i>: Cube (Mesh)
+         • <b>MeshRenderer</b>
+             ?? <i>Cast Shadows</i> = On
+             ?? <i>Receive Shadows</i> = True
+             ?? <i>Dynamic Occludee</i> = True
+             ?? <i>Static Shadow Caster</i> = False
+             ?? <i>Motion Vectors</i> = Per Object Motion
+             ?? <i>Light Probe Usage</i> = 1
+             ?? <i>Reflection Probe Usage</i> = 1
+             ?? <i>Ray Tracing Mode</i> = 2
+             ?? <i>Ray Trace Procedural</i> = False
+             ?? <i>Ray Tracing Accel Struct Build Flags Override</i> = False
+             ?? <i>Ray Tracing Accel Struct Build Flags</i> = 1
+             ?? <i>Small Mesh Culling</i> = True
+             ?? <i>Force Mesh Lod</i> = -1
+             ?? <i>Mesh Lod Selection Bias</i> = 0,00
+             ?? <i>Rendering Layer Mask</i> = 1
+             ?? <i>Renderer Priority</i> = 0
+             ?? <i>Probe Anchor</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+             ?? <i>Light Probe Volume Override</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+             ?? <i>Scale In Lightmap</i> = 1,00
+             ?? <i>Receive GI</i> = 1
+             ?? <i>Preserve U Vs</i> = False
+             ?? <i>Ignore Normals For Chart Detection</i> = False
+             ?? <i>Important GI</i> = False
+             ?? <i>Stitch Lightmap Seams</i> = True
+             ?? <i>Minimum Chart Size</i> = 4
+             ?? <i>Auto UV Max Distance</i> = 0,50
+             ?? <i>Auto UV Max Angle</i> = 89,00
+             ?? <i>Lightmap Parameters</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+             ?? <i>Mask Interaction</i> = None
+         • <b>BoxCollider</b>
+             ?? <i>Material</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+             ?? <i>Layer Override Priority</i> = 0
+             ?? <i>Is Trigger</i> = False
+             ?? <i>Provides Contacts</i> = False
+      ??? monitor stand 2 [Active] (Layer: Default)
+         • <b>MeshFilter</b>
+             ?? <i>Mesh</i>: Cube (Mesh)
+         • <b>MeshRenderer</b>
+             ?? <i>Cast Shadows</i> = On
+             ?? <i>Receive Shadows</i> = True
+             ?? <i>Dynamic Occludee</i> = True
+             ?? <i>Static Shadow Caster</i> = False
+             ?? <i>Motion Vectors</i> = Per Object Motion
+             ?? <i>Light Probe Usage</i> = 1
+             ?? <i>Reflection Probe Usage</i> = 1
+             ?? <i>Ray Tracing Mode</i> = 2
+             ?? <i>Ray Trace Procedural</i> = False
+             ?? <i>Ray Tracing Accel Struct Build Flags Override</i> = False
+             ?? <i>Ray Tracing Accel Struct Build Flags</i> = 1
+             ?? <i>Small Mesh Culling</i> = True
+             ?? <i>Force Mesh Lod</i> = -1
+             ?? <i>Mesh Lod Selection Bias</i> = 0,00
+             ?? <i>Rendering Layer Mask</i> = 1
+             ?? <i>Renderer Priority</i> = 0
+             ?? <i>Probe Anchor</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+             ?? <i>Light Probe Volume Override</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+             ?? <i>Scale In Lightmap</i> = 1,00
+             ?? <i>Receive GI</i> = 1
+             ?? <i>Preserve U Vs</i> = False
+             ?? <i>Ignore Normals For Chart Detection</i> = False
+             ?? <i>Important GI</i> = False
+             ?? <i>Stitch Lightmap Seams</i> = True
+             ?? <i>Minimum Chart Size</i> = 4
+             ?? <i>Auto UV Max Distance</i> = 0,50
+             ?? <i>Auto UV Max Angle</i> = 89,00
+             ?? <i>Lightmap Parameters</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+             ?? <i>Mask Interaction</i> = None
+         • <b>BoxCollider</b>
+             ?? <i>Material</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+             ?? <i>Layer Override Priority</i> = 0
+             ?? <i>Is Trigger</i> = False
+             ?? <i>Provides Contacts</i> = False
+      ??? monitor stand 3 [Active] (Layer: Default)
+         • <b>MeshFilter</b>
+             ?? <i>Mesh</i>: Cube (Mesh)
+         • <b>MeshRenderer</b>
+             ?? <i>Cast Shadows</i> = On
+             ?? <i>Receive Shadows</i> = True
+             ?? <i>Dynamic Occludee</i> = True
+             ?? <i>Static Shadow Caster</i> = False
+             ?? <i>Motion Vectors</i> = Per Object Motion
+             ?? <i>Light Probe Usage</i> = 1
+             ?? <i>Reflection Probe Usage</i> = 1
+             ?? <i>Ray Tracing Mode</i> = 2
+             ?? <i>Ray Trace Procedural</i> = False
+             ?? <i>Ray Tracing Accel Struct Build Flags Override</i> = False
+             ?? <i>Ray Tracing Accel Struct Build Flags</i> = 1
+             ?? <i>Small Mesh Culling</i> = True
+             ?? <i>Force Mesh Lod</i> = -1
+             ?? <i>Mesh Lod Selection Bias</i> = 0,00
+             ?? <i>Rendering Layer Mask</i> = 1
+             ?? <i>Renderer Priority</i> = 0
+             ?? <i>Probe Anchor</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+             ?? <i>Light Probe Volume Override</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+             ?? <i>Scale In Lightmap</i> = 1,00
+             ?? <i>Receive GI</i> = 1
+             ?? <i>Preserve U Vs</i> = False
+             ?? <i>Ignore Normals For Chart Detection</i> = False
+             ?? <i>Important GI</i> = False
+             ?? <i>Stitch Lightmap Seams</i> = True
+             ?? <i>Minimum Chart Size</i> = 4
+             ?? <i>Auto UV Max Distance</i> = 0,50
+             ?? <i>Auto UV Max Angle</i> = 89,00
+             ?? <i>Lightmap Parameters</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+             ?? <i>Mask Interaction</i> = None
+         • <b>BoxCollider</b>
+             ?? <i>Material</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+             ?? <i>Layer Override Priority</i> = 0
+             ?? <i>Is Trigger</i> = False
+             ?? <i>Provides Contacts</i> = False
+   ??? TV Left [Active] (Layer: Default)
+      ??? monitor [Active] (Layer: Default)
+         • <b>MeshFilter</b>
+             ?? <i>Mesh</i>: Cube (Mesh)
+         • <b>MeshRenderer</b>
+             ?? <i>Cast Shadows</i> = On
+             ?? <i>Receive Shadows</i> = True
+             ?? <i>Dynamic Occludee</i> = True
+             ?? <i>Static Shadow Caster</i> = False
+             ?? <i>Motion Vectors</i> = Per Object Motion
+             ?? <i>Light Probe Usage</i> = 1
+             ?? <i>Reflection Probe Usage</i> = 1
+             ?? <i>Ray Tracing Mode</i> = 2
+             ?? <i>Ray Trace Procedural</i> = False
+             ?? <i>Ray Tracing Accel Struct Build Flags Override</i> = False
+             ?? <i>Ray Tracing Accel Struct Build Flags</i> = 1
+             ?? <i>Small Mesh Culling</i> = True
+             ?? <i>Force Mesh Lod</i> = -1
+             ?? <i>Mesh Lod Selection Bias</i> = 0,00
+             ?? <i>Rendering Layer Mask</i> = 1
+             ?? <i>Renderer Priority</i> = 0
+             ?? <i>Probe Anchor</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+             ?? <i>Light Probe Volume Override</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+             ?? <i>Scale In Lightmap</i> = 1,00
+             ?? <i>Receive GI</i> = 1
+             ?? <i>Preserve U Vs</i> = False
+             ?? <i>Ignore Normals For Chart Detection</i> = False
+             ?? <i>Important GI</i> = False
+             ?? <i>Stitch Lightmap Seams</i> = True
+             ?? <i>Minimum Chart Size</i> = 4
+             ?? <i>Auto UV Max Distance</i> = 0,50
+             ?? <i>Auto UV Max Angle</i> = 89,00
+             ?? <i>Lightmap Parameters</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+             ?? <i>Mask Interaction</i> = None
+         • <b>BoxCollider</b>
+             ?? <i>Material</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+             ?? <i>Layer Override Priority</i> = 0
+             ?? <i>Is Trigger</i> = False
+             ?? <i>Provides Contacts</i> = False
+         ??? UI_MONITOR_LEFT [Active] (Layer: UI)
+            • <b>Canvas</b>
+                ?? <i>Render Mode</i> = World Space
+                ?? <i>Camera</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+                ?? <i>Plane Distance</i> = 100,00
+                ?? <i>Pixel Perfect</i> = False
+                ?? <i>Receives Events</i> = True
+                ?? <i>Override Sorting</i> = False
+                ?? <i>Override Pixel Perfect</i> = False
+                ?? <i>Sorting Bucket Normalized Size</i> = 0,00
+                ?? <i>Vertex Color Always Gamma Space</i> = False
+                ?? <i>Additional Shader Channels Flag</i> = None
+                ?? <i>Update Rect Transform For Standalone</i> = Enabled
+            • <b>CanvasScaler</b>
+                ?? <i>Ui Scale Mode</i> = Constant Pixel Size
+                ?? <i>Reference Pixels Per Unit</i> = 100,00
+                ?? <i>Scale Factor</i> = 1,00
+                ?? <i>Screen Match Mode</i> = Match Width Or Height
+                ?? <i>Match Width Or Height</i> = 0,00
+                ?? <i>Physical Unit</i> = Points
+                ?? <i>Fallback Screen DPI</i> = 96,00
+                ?? <i>Default Sprite DPI</i> = 96,00
+                ?? <i>Dynamic Pixels Per Unit</i> = 1,00
+                ?? <i>Preset Info Is World</i> = True
+            • <b>GraphicRaycaster</b>
+                ?? <i>Ignore Reversed Graphics</i> = True
+                ?? <i>Blocking Objects</i> = None
+      ??? monitor stand 1 [Active] (Layer: Default)
+         • <b>MeshFilter</b>
+             ?? <i>Mesh</i>: Cube (Mesh)
+         • <b>MeshRenderer</b>
+             ?? <i>Cast Shadows</i> = On
+             ?? <i>Receive Shadows</i> = True
+             ?? <i>Dynamic Occludee</i> = True
+             ?? <i>Static Shadow Caster</i> = False
+             ?? <i>Motion Vectors</i> = Per Object Motion
+             ?? <i>Light Probe Usage</i> = 1
+             ?? <i>Reflection Probe Usage</i> = 1
+             ?? <i>Ray Tracing Mode</i> = 2
+             ?? <i>Ray Trace Procedural</i> = False
+             ?? <i>Ray Tracing Accel Struct Build Flags Override</i> = False
+             ?? <i>Ray Tracing Accel Struct Build Flags</i> = 1
+             ?? <i>Small Mesh Culling</i> = True
+             ?? <i>Force Mesh Lod</i> = -1
+             ?? <i>Mesh Lod Selection Bias</i> = 0,00
+             ?? <i>Rendering Layer Mask</i> = 1
+             ?? <i>Renderer Priority</i> = 0
+             ?? <i>Probe Anchor</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+             ?? <i>Light Probe Volume Override</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+             ?? <i>Scale In Lightmap</i> = 1,00
+             ?? <i>Receive GI</i> = 1
+             ?? <i>Preserve U Vs</i> = False
+             ?? <i>Ignore Normals For Chart Detection</i> = False
+             ?? <i>Important GI</i> = False
+             ?? <i>Stitch Lightmap Seams</i> = True
+             ?? <i>Minimum Chart Size</i> = 4
+             ?? <i>Auto UV Max Distance</i> = 0,50
+             ?? <i>Auto UV Max Angle</i> = 89,00
+             ?? <i>Lightmap Parameters</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+             ?? <i>Mask Interaction</i> = None
+         • <b>BoxCollider</b>
+             ?? <i>Material</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+             ?? <i>Layer Override Priority</i> = 0
+             ?? <i>Is Trigger</i> = False
+             ?? <i>Provides Contacts</i> = False
+      ??? monitor stand 2 [Active] (Layer: Default)
+         • <b>MeshFilter</b>
+             ?? <i>Mesh</i>: Cube (Mesh)
+         • <b>MeshRenderer</b>
+             ?? <i>Cast Shadows</i> = On
+             ?? <i>Receive Shadows</i> = True
+             ?? <i>Dynamic Occludee</i> = True
+             ?? <i>Static Shadow Caster</i> = False
+             ?? <i>Motion Vectors</i> = Per Object Motion
+             ?? <i>Light Probe Usage</i> = 1
+             ?? <i>Reflection Probe Usage</i> = 1
+             ?? <i>Ray Tracing Mode</i> = 2
+             ?? <i>Ray Trace Procedural</i> = False
+             ?? <i>Ray Tracing Accel Struct Build Flags Override</i> = False
+             ?? <i>Ray Tracing Accel Struct Build Flags</i> = 1
+             ?? <i>Small Mesh Culling</i> = True
+             ?? <i>Force Mesh Lod</i> = -1
+             ?? <i>Mesh Lod Selection Bias</i> = 0,00
+             ?? <i>Rendering Layer Mask</i> = 1
+             ?? <i>Renderer Priority</i> = 0
+             ?? <i>Probe Anchor</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+             ?? <i>Light Probe Volume Override</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+             ?? <i>Scale In Lightmap</i> = 1,00
+             ?? <i>Receive GI</i> = 1
+             ?? <i>Preserve U Vs</i> = False
+             ?? <i>Ignore Normals For Chart Detection</i> = False
+             ?? <i>Important GI</i> = False
+             ?? <i>Stitch Lightmap Seams</i> = True
+             ?? <i>Minimum Chart Size</i> = 4
+             ?? <i>Auto UV Max Distance</i> = 0,50
+             ?? <i>Auto UV Max Angle</i> = 89,00
+             ?? <i>Lightmap Parameters</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+             ?? <i>Mask Interaction</i> = None
+         • <b>BoxCollider</b>
+             ?? <i>Material</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+             ?? <i>Layer Override Priority</i> = 0
+             ?? <i>Is Trigger</i> = False
+             ?? <i>Provides Contacts</i> = False
+      ??? monitor stand 3 [Active] (Layer: Default)
+         • <b>MeshFilter</b>
+             ?? <i>Mesh</i>: Cube (Mesh)
+         • <b>MeshRenderer</b>
+             ?? <i>Cast Shadows</i> = On
+             ?? <i>Receive Shadows</i> = True
+             ?? <i>Dynamic Occludee</i> = True
+             ?? <i>Static Shadow Caster</i> = False
+             ?? <i>Motion Vectors</i> = Per Object Motion
+             ?? <i>Light Probe Usage</i> = 1
+             ?? <i>Reflection Probe Usage</i> = 1
+             ?? <i>Ray Tracing Mode</i> = 2
+             ?? <i>Ray Trace Procedural</i> = False
+             ?? <i>Ray Tracing Accel Struct Build Flags Override</i> = False
+             ?? <i>Ray Tracing Accel Struct Build Flags</i> = 1
+             ?? <i>Small Mesh Culling</i> = True
+             ?? <i>Force Mesh Lod</i> = -1
+             ?? <i>Mesh Lod Selection Bias</i> = 0,00
+             ?? <i>Rendering Layer Mask</i> = 1
+             ?? <i>Renderer Priority</i> = 0
+             ?? <i>Probe Anchor</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+             ?? <i>Light Probe Volume Override</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+             ?? <i>Scale In Lightmap</i> = 1,00
+             ?? <i>Receive GI</i> = 1
+             ?? <i>Preserve U Vs</i> = False
+             ?? <i>Ignore Normals For Chart Detection</i> = False
+             ?? <i>Important GI</i> = False
+             ?? <i>Stitch Lightmap Seams</i> = True
+             ?? <i>Minimum Chart Size</i> = 4
+             ?? <i>Auto UV Max Distance</i> = 0,50
+             ?? <i>Auto UV Max Angle</i> = 89,00
+             ?? <i>Lightmap Parameters</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+             ?? <i>Mask Interaction</i> = None
+         • <b>BoxCollider</b>
+             ?? <i>Material</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+             ?? <i>Layer Override Priority</i> = 0
+             ?? <i>Is Trigger</i> = False
+             ?? <i>Provides Contacts</i> = False
+   ??? Door [Active] (Layer: Default)
+      • <b>MeshFilter</b>
+          ?? <i>Mesh</i>: Cube (Mesh)
+      • <b>MeshRenderer</b>
+          ?? <i>Cast Shadows</i> = On
+          ?? <i>Receive Shadows</i> = True
+          ?? <i>Dynamic Occludee</i> = True
+          ?? <i>Static Shadow Caster</i> = False
+          ?? <i>Motion Vectors</i> = Per Object Motion
+          ?? <i>Light Probe Usage</i> = 1
+          ?? <i>Reflection Probe Usage</i> = 1
+          ?? <i>Ray Tracing Mode</i> = 2
+          ?? <i>Ray Trace Procedural</i> = False
+          ?? <i>Ray Tracing Accel Struct Build Flags Override</i> = False
+          ?? <i>Ray Tracing Accel Struct Build Flags</i> = 1
+          ?? <i>Small Mesh Culling</i> = True
+          ?? <i>Force Mesh Lod</i> = -1
+          ?? <i>Mesh Lod Selection Bias</i> = 0,00
+          ?? <i>Rendering Layer Mask</i> = 1
+          ?? <i>Renderer Priority</i> = 0
+          ?? <i>Probe Anchor</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+          ?? <i>Light Probe Volume Override</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+          ?? <i>Scale In Lightmap</i> = 1,00
+          ?? <i>Receive GI</i> = 1
+          ?? <i>Preserve U Vs</i> = False
+          ?? <i>Ignore Normals For Chart Detection</i> = False
+          ?? <i>Important GI</i> = False
+          ?? <i>Stitch Lightmap Seams</i> = True
+          ?? <i>Minimum Chart Size</i> = 4
+          ?? <i>Auto UV Max Distance</i> = 0,50
+          ?? <i>Auto UV Max Angle</i> = 89,00
+          ?? <i>Lightmap Parameters</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+          ?? <i>Mask Interaction</i> = None
+      • <b>BoxCollider</b>
+          ?? <i>Material</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+          ?? <i>Layer Override Priority</i> = 0
+          ?? <i>Is Trigger</i> = False
+          ?? <i>Provides Contacts</i> = False
+      ??? Cube [Active] (Layer: Default)
+         • <b>MeshFilter</b>
+             ?? <i>Mesh</i>: Cube (Mesh)
+         • <b>MeshRenderer</b>
+             ?? <i>Cast Shadows</i> = On
+             ?? <i>Receive Shadows</i> = True
+             ?? <i>Dynamic Occludee</i> = True
+             ?? <i>Static Shadow Caster</i> = False
+             ?? <i>Motion Vectors</i> = Per Object Motion
+             ?? <i>Light Probe Usage</i> = 1
+             ?? <i>Reflection Probe Usage</i> = 1
+             ?? <i>Ray Tracing Mode</i> = 2
+             ?? <i>Ray Trace Procedural</i> = False
+             ?? <i>Ray Tracing Accel Struct Build Flags Override</i> = False
+             ?? <i>Ray Tracing Accel Struct Build Flags</i> = 1
+             ?? <i>Small Mesh Culling</i> = True
+             ?? <i>Force Mesh Lod</i> = -1
+             ?? <i>Mesh Lod Selection Bias</i> = 0,00
+             ?? <i>Rendering Layer Mask</i> = 1
+             ?? <i>Renderer Priority</i> = 0
+             ?? <i>Probe Anchor</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+             ?? <i>Light Probe Volume Override</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+             ?? <i>Scale In Lightmap</i> = 1,00
+             ?? <i>Receive GI</i> = 1
+             ?? <i>Preserve U Vs</i> = False
+             ?? <i>Ignore Normals For Chart Detection</i> = False
+             ?? <i>Important GI</i> = False
+             ?? <i>Stitch Lightmap Seams</i> = True
+             ?? <i>Minimum Chart Size</i> = 4
+             ?? <i>Auto UV Max Distance</i> = 0,50
+             ?? <i>Auto UV Max Angle</i> = 89,00
+             ?? <i>Lightmap Parameters</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+             ?? <i>Mask Interaction</i> = None
+         • <b>BoxCollider</b>
+             ?? <i>Material</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+             ?? <i>Layer Override Priority</i> = 0
+             ?? <i>Is Trigger</i> = False
+             ?? <i>Provides Contacts</i> = False
+   ??? CameraPivot [Active] (Layer: Default)
+      • <b>RoomViewController</b>
+          ?? <i>Current Index</i> = 1
+          ?? <i>Rotation Duration</i> = 0,35
+          ?? <i>Is Cyclic</i> = True
+      ??? Main Camera [Active] (Layer: Default)
+         • <b>Camera</b>
+             ?? <i>Clear Flags</i> = Skybox
+             ?? <i>Projection Matrix Mode</i> = 1
+             ?? <i>Gate Fit Mode</i> = 2
+             ?? <i>FOV Axis Mode</i> = 0
+             ?? <i>Iso</i> = 200
+             ?? <i>Shutter Speed</i> = 0,01
+             ?? <i>Aperture</i> = 16,00
+             ?? <i>Focus Distance</i> = 10,00
+             ?? <i>Focal Length</i> = 50,00
+             ?? <i>Blade Count</i> = 5
+             ?? <i>Barrel Clipping</i> = 0,25
+             ?? <i>Anamorphism</i> = 0,00
+             ?? <i>Near clip plane</i> = 0,30
+             ?? <i>Far clip plane</i> = 1000,00
+             ?? <i>Field of view</i> = 60,00
+             ?? <i>Orthographic</i> = False
+             ?? <i>Orthographic size</i> = 5,00
+             ?? <i>Depth</i> = -1,00
+             ?? <i>Rendering Path</i> = Use Graphics Settings
+             ?? <i>Target Texture</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+             ?? <i>Target Display</i> = 0
+             ?? <i>Target Eye</i> = 3
+             ?? <i>HDR</i> = True
+             ?? <i>Allow MSAA</i> = True
+             ?? <i>Allow Dynamic Resolution</i> = False
+             ?? <i>Force Into RT</i> = False
+             ?? <i>Occlusion Culling</i> = True
+             ?? <i>Stereo Convergence</i> = 10,00
+             ?? <i>Stereo Separation</i> = 0,02
+         • <b>AudioListener</b>
+         • <b>UniversalAdditionalCameraData</b>
+             ?? <i>Render Shadows</i> = True
+             ?? <i>Requires Depth Texture Option</i> = Use settings from Render Pipeline Asset
+             ?? <i>Requires Opaque Texture Option</i> = Use settings from Render Pipeline Asset
+             ?? <i>Camera Type</i> = Base
+             ?? <i>Renderer Index</i> = -1
+             ?? <i>Volume Trigger</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+             ?? <i>Volume Framework Update Mode Option</i> = Use Pipeline Settings
+             ?? <i>Render Post Processing</i> = True
+             ?? <i>Antialiasing</i> = No Anti-aliasing
+             ?? <i>Antialiasing Quality</i> = High
+             ?? <i>Stop Na N</i> = False
+             ?? <i>Dithering</i> = False
+             ?? <i>Clear Depth</i> = True
+             ?? <i>Allow XR Rendering</i> = True
+             ?? <i>Allow HDR Output</i> = True
+             ?? <i>Use Screen Coord Override</i> = False
+             ?? <i>Requires Depth Texture</i> = False
+             ?? <i>Requires Color Texture</i> = False
+             ?? <i>Version</i> = Depth And Opaque Texture Options
+? Canvas [Active] (Layer: UI)
+   • <b>Canvas</b>
+       ?? <i>Render Mode</i> = Screen Space - Overlay
+       ?? <i>Camera</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+       ?? <i>Plane Distance</i> = 100,00
+       ?? <i>Pixel Perfect</i> = False
+       ?? <i>Receives Events</i> = True
+       ?? <i>Override Sorting</i> = False
+       ?? <i>Override Pixel Perfect</i> = False
+       ?? <i>Sorting Bucket Normalized Size</i> = 0,00
+       ?? <i>Vertex Color Always Gamma Space</i> = False
+       ?? <i>Additional Shader Channels Flag</i> = -1
+       ?? <i>Update Rect Transform For Standalone</i> = Enabled
+   • <b>CanvasScaler</b>
+       ?? <i>Ui Scale Mode</i> = Scale With Screen Size
+       ?? <i>Reference Pixels Per Unit</i> = 100,00
+       ?? <i>Scale Factor</i> = 1,00
+       ?? <i>Screen Match Mode</i> = Match Width Or Height
+       ?? <i>Match Width Or Height</i> = 0,50
+       ?? <i>Physical Unit</i> = Points
+       ?? <i>Fallback Screen DPI</i> = 96,00
+       ?? <i>Default Sprite DPI</i> = 96,00
+       ?? <i>Dynamic Pixels Per Unit</i> = 1,00
+       ?? <i>Preset Info Is World</i> = False
+   • <b>GraphicRaycaster</b>
+       ?? <i>Ignore Reversed Graphics</i> = True
+       ?? <i>Blocking Objects</i> = None
+   ??? RotateLeftButton [Active] (Layer: UI)
+      • <b>Image</b>
+          ?? <i>Material</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+          ?? <i>Raycast Target</i> = True
+          ?? <i>Maskable</i> = True
+          ?? <i>Sprite</i>: UISprite (Sprite)
+          ?? <i>Type</i> = Sliced
+          ?? <i>Preserve Aspect</i> = False
+          ?? <i>Fill Center</i> = True
+          ?? <i>Fill Method</i> = Radial 360
+          ?? <i>Fill Amount</i> = 1,00
+          ?? <i>Fill Clockwise</i> = True
+          ?? <i>Fill Origin</i> = 0
+          ?? <i>Use Sprite Mesh</i> = False
+          ?? <i>Pixels Per Unit Multiplier</i> = 1,00
+      • <b>Button</b>
+          ?? <i>Transition</i> = Color Tint
+          ?? <i>Interactable</i> = True
+          ?? <i>Target Graphic</i>: RotateLeftButton (Image)
+      ??? Text (TMP) [Active] (Layer: UI)
+         • <b>TextMeshProUGUI</b>
+             ?? <i>Material</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+             ?? <i>Raycast Target</i> = True
+             ?? <i>Maskable</i> = True
+             ?? <i>Text</i> = "Left"
+             ?? <i>Is Right To Left</i> = False
+             ?? <i>Font Asset</i>: LiberationSans SDF (TMP_FontAsset)
+             ?? <i>Shared Material</i>: LiberationSans SDF Material (Material)
+             ?? <i>Font Material</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+             ?? <i>Enable Vertex Gradient</i> = False
+             ?? <i>Color Mode</i> = Four Corners Gradient
+             ?? <i>Font Color Gradient Preset</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+             ?? <i>Sprite Asset</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+             ?? <i>Tint All Sprites</i> = False
+             ?? <i>Style Sheet</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+             ?? <i>Text Style Hash Code</i> = -1183493901
+             ?? <i>Override Html Colors</i> = False
+             ?? <i>Font Size</i> = 50,00
+             ?? <i>Font Size Base</i> = 50,00
+             ?? <i>Font Weight</i> = Regular
+             ?? <i>Enable Auto Sizing</i> = False
+             ?? <i>Font Size Min</i> = 0,00
+             ?? <i>Font Size Max</i> = 0,00
+             ?? <i>Font Style</i> = Normal
+             ?? <i>Horizontal Alignment</i> = Center
+             ?? <i>Vertical Alignment</i> = Middle
+             ?? <i>Text Alignment</i> = Converted
+             ?? <i>Character Spacing</i> = 0,00
+             ?? <i>Character Horizontal Scale</i> = 1,00
+             ?? <i>Word Spacing</i> = 0,00
+             ?? <i>Line Spacing</i> = 0,00
+             ?? <i>Line Spacing Max</i> = 0,00
+             ?? <i>Paragraph Spacing</i> = 0,00
+             ?? <i>Char Width Max Adj</i> = 0,00
+             ?? <i>Text Wrapping Mode</i> = No Wrap
+             ?? <i>Word Wrapping Ratios</i> = 0,40
+             ?? <i>Overflow Mode</i> = Overflow
+             ?? <i>Linked Text Component</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+             ?? <i>Parent Linked Component</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+             ?? <i>Enable Kerning</i> = False
+             ?? <i>Enable Extra Padding</i> = False
+             ?? <i>Check Padding Required</i> = False
+             ?? <i>Is Rich Text</i> = True
+             ?? <i>Emoji Fallback Support</i> = True
+             ?? <i>Parse Ctrl Characters</i> = True
+             ?? <i>Is Orthographic</i> = True
+             ?? <i>Is Culling Enabled</i> = False
+             ?? <i>Horizontal Mapping</i> = Character
+             ?? <i>Vertical Mapping</i> = Character
+             ?? <i>Uv Line Offset</i> = 0,00
+             ?? <i>Geometry Sorting Order</i> = Normal
+             ?? <i>Is Text Object Scale Static</i> = False
+             ?? <i>Vertex Buffer Auto Size Reduction</i> = False
+             ?? <i>Use Max Visible Descender</i> = True
+             ?? <i>Page To Display</i> = 1
+             ?? <i>Is Using Legacy Animation Component</i> = False
+             ?? <i>Is Volumetric Text</i> = False
+             ?? <i>Has Font Asset Changed</i> = False
+             ?? <i>Base Material</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+   ??? RotateRightButton [Active] (Layer: UI)
+      • <b>Image</b>
+          ?? <i>Material</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+          ?? <i>Raycast Target</i> = True
+          ?? <i>Maskable</i> = True
+          ?? <i>Sprite</i>: UISprite (Sprite)
+          ?? <i>Type</i> = Sliced
+          ?? <i>Preserve Aspect</i> = False
+          ?? <i>Fill Center</i> = True
+          ?? <i>Fill Method</i> = Radial 360
+          ?? <i>Fill Amount</i> = 1,00
+          ?? <i>Fill Clockwise</i> = True
+          ?? <i>Fill Origin</i> = 0
+          ?? <i>Use Sprite Mesh</i> = False
+          ?? <i>Pixels Per Unit Multiplier</i> = 1,00
+      • <b>Button</b>
+          ?? <i>Transition</i> = Color Tint
+          ?? <i>Interactable</i> = True
+          ?? <i>Target Graphic</i>: RotateRightButton (Image)
+      ??? Text (TMP) [Active] (Layer: UI)
+         • <b>TextMeshProUGUI</b>
+             ?? <i>Material</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+             ?? <i>Raycast Target</i> = True
+             ?? <i>Maskable</i> = True
+             ?? <i>Text</i> = "Right"
+             ?? <i>Is Right To Left</i> = False
+             ?? <i>Font Asset</i>: LiberationSans SDF (TMP_FontAsset)
+             ?? <i>Shared Material</i>: LiberationSans SDF Material (Material)
+             ?? <i>Font Material</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+             ?? <i>Enable Vertex Gradient</i> = False
+             ?? <i>Color Mode</i> = Four Corners Gradient
+             ?? <i>Font Color Gradient Preset</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+             ?? <i>Sprite Asset</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+             ?? <i>Tint All Sprites</i> = False
+             ?? <i>Style Sheet</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+             ?? <i>Text Style Hash Code</i> = -1183493901
+             ?? <i>Override Html Colors</i> = False
+             ?? <i>Font Size</i> = 50,00
+             ?? <i>Font Size Base</i> = 50,00
+             ?? <i>Font Weight</i> = Regular
+             ?? <i>Enable Auto Sizing</i> = False
+             ?? <i>Font Size Min</i> = 0,00
+             ?? <i>Font Size Max</i> = 0,00
+             ?? <i>Font Style</i> = Normal
+             ?? <i>Horizontal Alignment</i> = Center
+             ?? <i>Vertical Alignment</i> = Middle
+             ?? <i>Text Alignment</i> = Converted
+             ?? <i>Character Spacing</i> = 0,00
+             ?? <i>Character Horizontal Scale</i> = 1,00
+             ?? <i>Word Spacing</i> = 0,00
+             ?? <i>Line Spacing</i> = 0,00
+             ?? <i>Line Spacing Max</i> = 0,00
+             ?? <i>Paragraph Spacing</i> = 0,00
+             ?? <i>Char Width Max Adj</i> = 0,00
+             ?? <i>Text Wrapping Mode</i> = No Wrap
+             ?? <i>Word Wrapping Ratios</i> = 0,40
+             ?? <i>Overflow Mode</i> = Overflow
+             ?? <i>Linked Text Component</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+             ?? <i>Parent Linked Component</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+             ?? <i>Enable Kerning</i> = False
+             ?? <i>Enable Extra Padding</i> = False
+             ?? <i>Check Padding Required</i> = False
+             ?? <i>Is Rich Text</i> = True
+             ?? <i>Emoji Fallback Support</i> = True
+             ?? <i>Parse Ctrl Characters</i> = True
+             ?? <i>Is Orthographic</i> = True
+             ?? <i>Is Culling Enabled</i> = False
+             ?? <i>Horizontal Mapping</i> = Character
+             ?? <i>Vertical Mapping</i> = Character
+             ?? <i>Uv Line Offset</i> = 0,00
+             ?? <i>Geometry Sorting Order</i> = Normal
+             ?? <i>Is Text Object Scale Static</i> = False
+             ?? <i>Vertex Buffer Auto Size Reduction</i> = False
+             ?? <i>Use Max Visible Descender</i> = True
+             ?? <i>Page To Display</i> = 1
+             ?? <i>Is Using Legacy Animation Component</i> = False
+             ?? <i>Is Volumetric Text</i> = False
+             ?? <i>Has Font Asset Changed</i> = False
+             ?? <i>Base Material</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+? EventSystem [Active] (Layer: Default)
+   • <b>EventSystem</b>
+       ?? <i>First Selected</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+       ?? <i>Send Navigation Events</i> = True
+       ?? <i>Drag Threshold</i> = 10
+   • <b>InputSystemUIInputModule</b>
+       ?? <i>Send Pointer Hover To Parent</i> = True
+       ?? <i>Move Repeat Delay</i> = 0,50
+       ?? <i>Move Repeat Rate</i> = 0,10
+       ?? <i>XR Tracking Origin</i>: <color=#FF4444>[NULL / НЕ НАЗНАЧЕНО]</color>
+       ?? <i>Deselect On Background Click</i> = True
+       ?? <i>Pointer Behavior</i> = Single Mouse Or Pen But Multi Touch And Track
+       ?? <i>Scroll Delta Per Tick</i> = 6,00
+
+============================================================
+ИТОГО: Объектов в сцене: 77 | Потерянных скриптов (Missing): 0
