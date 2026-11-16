@@ -5375,12 +5375,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LeftMonitorShopController
   _rightMapMonitor: {fileID: 836057355}
+  _squadConfigs:
+  - {fileID: 11400000, guid: 97e1e5efca5cb234ea17dcae3886cdff, type: 2}
+  - {fileID: 11400000, guid: b466bdd0f4edee44d96e8de62722e9e9, type: 2}
+  - {fileID: 11400000, guid: ae53c08b1a9c5dc48a55ad53fc8a4392, type: 2}
+  - {fileID: 11400000, guid: 5aace0ff8d5f4624781c59b60013d767, type: 2}
+  _squadButtons: []
   _currency: 150
   _sanitySlider: {fileID: 2124994572}
   _currencyText: {fileID: 186191720}
-  _btnBuyGBR: {fileID: 429702446}
-  _btnBuySpetsnaz: {fileID: 300429299}
-  _btnBuyBiohazard: {fileID: 621303952}
   _dispatchButton: {fileID: 1679511650}
   _dispatchBtnText: {fileID: 2013666119}
   _reportLogText: {fileID: 1396336332}
