@@ -3,28 +3,28 @@ using UnityEngine;
 
 public class RoomViewController : MonoBehaviour
 {
-    [Header("Настройки углов")]
-    [Tooltip("Список углов по оси Y (например: 0 - стол, 90 - правый монитор, 180 - дверь сзади, -90 - левый монитор)")]
+    [Header("пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ")]
+    [Tooltip("пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅ Y (пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ: 0 - пїЅпїЅпїЅпїЅ, 90 - пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ, 180 - пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ, -90 - пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ)")]
     [SerializeField] private float[] _targetYawAngles = new float[] { -45f, 0f, 45f, 180f };
 
-    [Tooltip("Стартовый индекс ракурса")]
-    [SerializeField] private int _currentIndex = 1; // По умолчанию смотрим в центр (0 градусов)
+    [Tooltip("пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ")]
+    [SerializeField] private int _currentIndex = 1; // пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ (0 пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ)
 
-    [Header("Настройки плавности")]
-    [Tooltip("Время поворота в секундах")]
+    [Header("пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ")]
+    [Tooltip("пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ")]
     [SerializeField] private float _rotationDuration = 0.35f;
 
-    [Tooltip("Кривая плавности движения (разгон и торможение кресла)")]
+    [Tooltip("пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ (пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ)")]
     [SerializeField] private AnimationCurve _smoothCurve = AnimationCurve.EaseInOut(0, 0, 1, 1);
 
-    [Tooltip("Зацикливать ли поворот по кругу на 360 градусов")]
+    [Tooltip("пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ 360 пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ")]
     [SerializeField] private bool _isCyclic = true;
 
     private Coroutine _rotationCoroutine;
 
     private void Start()
     {
-        // Устанавливаем стартовый угол без анимации при старте игры
+        // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
         if (_targetYawAngles != null && _targetYawAngles.Length > 0)
         {
             _currentIndex = Mathf.Clamp(_currentIndex, 0, _targetYawAngles.Length - 1);
@@ -33,7 +33,7 @@ public class RoomViewController : MonoBehaviour
     }
 
     /// <summary>
-    /// Поворот на один шаг влево (вешать на кнопку UI Влево)
+    /// пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ (пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ UI пїЅпїЅпїЅпїЅпїЅ)
     /// </summary>
     public void RotateLeft()
     {
@@ -41,7 +41,7 @@ public class RoomViewController : MonoBehaviour
     }
 
     /// <summary>
-    /// Поворот на один шаг вправо (вешать на кнопку UI Вправо)
+    /// пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ (пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ UI пїЅпїЅпїЅпїЅпїЅпїЅ)
     /// </summary>
     public void RotateRight()
     {
@@ -56,15 +56,15 @@ public class RoomViewController : MonoBehaviour
 
         if (_isCyclic)
         {
-            // Бесшовный переход по кругу (с последнего на первый и наоборот)
+            // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ (пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ)
             if (newIndex >= _targetYawAngles.Length) newIndex = 0;
             else if (newIndex < 0) newIndex = _targetYawAngles.Length - 1;
         }
         else
         {
-            // Упираемся в границы без кругового вращения
+            // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
             newIndex = Mathf.Clamp(newIndex, 0, _targetYawAngles.Length - 1);
-            if (newIndex == _currentIndex) return; // Уже на краю
+            if (newIndex == _currentIndex) return; // пїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅ
         }
 
         _currentIndex = newIndex;
@@ -73,7 +73,7 @@ public class RoomViewController : MonoBehaviour
 
     private void RotateToAngle(float targetAngleY)
     {
-        // Если уже крутимся — прерываем прошлый поворот, чтобы подхватить новый клик
+        // пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
         if (_rotationCoroutine != null)
         {
             StopCoroutine(_rotationCoroutine);
@@ -95,7 +95,7 @@ public class RoomViewController : MonoBehaviour
             float progress = Mathf.Clamp01(elapsed / _rotationDuration);
             float curveValue = _smoothCurve.Evaluate(progress);
 
-            // Quaternion.Slerp сам выбирает кратчайший путь поворота сферы
+            // Quaternion.Slerp пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
             transform.rotation = Quaternion.Slerp(startRotation, targetRotation, curveValue);
 
             yield return null;

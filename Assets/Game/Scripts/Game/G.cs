@@ -1,3 +1,4 @@
+using AnomalyDispatch.Dialogue;
 using UnityEngine;
 
 public static class G
@@ -7,6 +8,9 @@ public static class G
     //public static GameMain GameMain;
 
     public static CMS CMS;
+    public static PlayerState PlayerState;
+    public static DialogueRunner DialogueRunner;
+    public static ConversationHandler ConversationHandler;
 }
 
 [DefaultExecutionOrder(-9999)]
@@ -28,6 +32,9 @@ public static class Bootstrapper
         //G.GameMain = CreateSimpleService<GameMain>();
 
         G.CMS = CreateSimpleService<CMS>();
+        G.PlayerState = CreateSimpleService<PlayerState>();
+        G.DialogueRunner = CreateSimpleService<DialogueRunner>();
+        G.ConversationHandler = CreateSimpleService<ConversationHandler>();
 
         //можно еще так, когда сцена загружается
         //G.SceneLoader.OnLoadAction = () =>
