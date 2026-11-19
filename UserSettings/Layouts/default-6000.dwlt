@@ -597,10 +597,10 @@ MonoBehaviour:
     m_TextWithWhitespace: "Scene\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 314
+    x: 334.6
     y: 24
-    width: 1239
-    height: 651
+    width: 1322.8
+    height: 738.8
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1129,9 +1129,9 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: 5.12976, y: 8.960169, z: 15.337316}
+    m_Target: {x: 3.082267, y: 9.482913, z: 9.713505}
     speed: 2
-    m_Value: {x: 0, y: 0, z: 0}
+    m_Value: {x: 5.12976, y: 8.960169, z: 15.337316}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1177,13 +1177,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.18446799, y: -0.15297674, z: 0.029076098, w: -0.9706327}
+    m_Target: {x: -0.13583021, y: -0.018279282, z: 0.0016127005, w: -0.9909343}
     speed: 2
-    m_Value: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
+    m_Value: {x: -0.18446799, y: -0.15297674, z: 0.0290761, w: -0.97063273}
   m_Size:
-    m_Target: 0.34126085
+    m_Target: 0.99301404
     speed: 2
-    m_Value: 10
+    m_Value: 0.34126085
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -1497,7 +1497,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -1521,8 +1521,9 @@ MonoBehaviour:
       m_Data: 47830
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 49108
-    - m_Data: 49110
+    - m_Data: 48794
+    - m_Data: 48796
+    - m_Data: 48798
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1555,8 +1556,9 @@ MonoBehaviour:
       m_Data: 0
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 49108
-    - m_Data: 49110
+    - m_Data: 48794
+    - m_Data: 48796
+    - m_Data: 48798
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
