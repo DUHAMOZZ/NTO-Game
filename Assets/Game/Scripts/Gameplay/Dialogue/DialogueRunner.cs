@@ -17,14 +17,23 @@ namespace AnomalyDispatch.Dialogue
         {
         }
 
-        void Start()
+        public void RegisterUI(DialogueUI dialogueUI)
         {
-            ui = FindFirstObjectByType<DialogueUI>();
+            ui = dialogueUI;
+        }
+
+        private void Start()
+        {
+            if (ui == null)
+            {
+                ui = FindFirstObjectByType<DialogueUI>();
+            }
         }
 
         public void StartConversation(DialogueConversation conversation, string overrideStartNode = null)
         {
             if (conversation == null) { Debug.LogError("[Dialogue] Conversation is null"); return; }
+            if (ui == null) { ui = FindFirstObjectByType<DialogueUI>(); }
             if (ui == null) { Debug.LogError("[Dialogue] UI is not found on the scene!"); return; }
 
             CurrentConversation = conversation;
@@ -43,8 +52,20 @@ namespace AnomalyDispatch.Dialogue
             PresentNode(node);
         }
 
+        public void AbortConversation()
+        {
+            IsRunning = false;
+            if (ui != null) ui.Hide();
+        }
+
         private void PresentNode(DialogueNode node)
         {
+            if (node == null)
+            {
+                EndConversation();
+                return;
+            }
+
             CurrentNode = node;
 
             if (node.onEnterEffects != null)
@@ -93,7 +114,7 @@ namespace AnomalyDispatch.Dialogue
         private void EndConversation()
         {
             IsRunning = false;
-            ui.Hide();
+            if (ui != null) ui.Hide();
             OnConversationEnded?.Invoke(CurrentNode);
         }
     }

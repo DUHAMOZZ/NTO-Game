@@ -1,107 +1,230 @@
+using System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
+[Serializable]
+public class SquadButtonSlot
+{
+    public SquadConfig config;
+    public Button button;
+    public TextMeshProUGUI labelText;
+    public GameObject selectedHighlight;
+}
+
 public class LeftMonitorShopController : MonoBehaviour
 {
-    [Header("Связь с правым монитором")]
+    [Header("Внешние ссылки")]
     [SerializeField] private RightMonitorMapController _rightMapMonitor;
+    [SerializeField] private GameShiftController _shiftController;
 
-    [Header("Экономика и Рассудок")]
-    [SerializeField] private int _currency = 150; // Стартовые очки/валюта
-    [SerializeField] private Slider _sanitySlider; // Шкала рассудка (0-100)
+    [Header("Слоты отрядов (сетка 2x2)")]
+    [SerializeField] private SquadButtonSlot[] _squadSlots;
+
+    [Header("HUD левого монитора")]
     [SerializeField] private TextMeshProUGUI _currencyText;
+    [SerializeField] private TextMeshProUGUI _timerText;
+    [SerializeField] private GameObject _timerContainer;
 
-    [Header("Кнопки покупки отрядов (Магазин)")]
-    [SerializeField] private Button _btnBuyGBR;       // Дешевый, быстрый (цена: 50)
-    [SerializeField] private Button _btnBuySpetsnaz;  // Тяжелый (цена: 100)
-    [SerializeField] private Button _btnBuyBiohazard; // Дорогой спецотряд (цена: 150)
-
-    [Header("Кнопка отправки")]
+    [Header("Отправка и радиоотчёт")]
     [SerializeField] private Button _dispatchButton;
     [SerializeField] private TextMeshProUGUI _dispatchBtnText;
-
-    [Header("Окно отчета / Результат")]
     [SerializeField] private TextMeshProUGUI _reportLogText;
 
-    // Выбранный отряд для покупки
-    private string _selectedSquadName = null;
-    private int _selectedSquadCost = 0;
+    private SquadConfig _selectedSquad;
+    private int _currentCurrency;
+    private bool _dispatchAllowed;
+    private BuildingTarget _cachedTarget;
 
-    private void Start()
+    private void Awake()
     {
-        // Привязываем кнопки магазина
-        _btnBuyGBR.onClick.AddListener(() => SelectSquad("ГБР (Быстрый)", 50));
-        _btnBuySpetsnaz.onClick.AddListener(() => SelectSquad("Тяжелый Спецназ", 100));
-        _btnBuyBiohazard.onClick.AddListener(() => SelectSquad("Группа Биозащиты", 150));
+        SetupSquadButtons();
 
-        _dispatchButton.onClick.AddListener(OnDispatchClicked);
+        if (_dispatchButton != null)
+        {
+            _dispatchButton.onClick.RemoveListener(OnDispatchClicked);
+            _dispatchButton.onClick.AddListener(OnDispatchClicked);
+        }
 
-        UpdateUI();
+        if (_rightMapMonitor != null)
+        {
+            _rightMapMonitor.OnBuildingSelected += HandleBuildingSelected;
+        }
     }
 
-    private void Update()
+    private void OnDestroy()
     {
-        // Проверяем: если и на левом мониторе выбран отряд, и на правом выбрано здание — кнопка отправки активна
-        bool hasBuilding = _rightMapMonitor != null && _rightMapMonitor.CurrentBuilding != null;
-        bool hasSquad = !string.IsNullOrEmpty(_selectedSquadName);
+        if (_rightMapMonitor != null)
+        {
+            _rightMapMonitor.OnBuildingSelected -= HandleBuildingSelected;
+        }
+    }
 
-        _dispatchButton.interactable = hasBuilding && hasSquad && (_currency >= _selectedSquadCost);
+    private void SetupSquadButtons()
+    {
+        if (_squadSlots == null) return;
+
+        for (int i = 0; i < _squadSlots.Length; i++)
+        {
+            SquadButtonSlot slot = _squadSlots[i];
+            if (slot == null || slot.config == null || slot.button == null) continue;
+
+            if (slot.labelText != null)
+            {
+                slot.labelText.text = $"{slot.config.squadName} [{slot.config.cost}]";
+            }
+
+            if (slot.selectedHighlight != null)
+            {
+                slot.selectedHighlight.SetActive(false);
+            }
+
+            SquadConfig capturedCfg = slot.config;
+            slot.button.onClick.RemoveAllListeners();
+            slot.button.onClick.AddListener(() => SelectSquad(capturedCfg));
+        }
+    }
+
+    public void InitializeState(int startingCurrency)
+    {
+        _currentCurrency = startingCurrency;
+        UpdateCurrencyDisplay(startingCurrency);
+        UpdateTimerDisplay(-1);
+        ClearSelectedSquad();
+    }
+
+    public void SetDispatchEnabled(bool isEnabled)
+    {
+        _dispatchAllowed = isEnabled;
+        if (!isEnabled)
+        {
+            ClearSelectedSquad();
+        }
+        RefreshDispatchButtonState();
+    }
+
+    public void UpdateCurrencyDisplay(int newCurrency)
+    {
+        _currentCurrency = newCurrency;
+        if (_currencyText != null)
+        {
+            _currencyText.text = $"КРЫШЕЧКИ: {_currentCurrency}";
+        }
+        RefreshDispatchButtonState();
+    }
+
+    public void UpdateTimerDisplay(int remainingSeconds)
+    {
+        bool show = remainingSeconds >= 0;
+        if (_timerContainer != null)
+        {
+            _timerContainer.SetActive(show);
+        }
+
+        if (_timerText != null)
+        {
+            _timerText.text = show ? $"ВРЕМЯ: {remainingSeconds} с" : string.Empty;
+        }
+    }
+
+    public void SetReportText(string text)
+    {
+        if (_reportLogText != null)
+        {
+            _reportLogText.text = text;
+        }
+    }
+
+    public void ClearSelectedSquad()
+    {
+        _selectedSquad = null;
+        UpdateSlotHighlights();
+        RefreshDispatchButtonState();
+    }
+
+    private void HandleBuildingSelected(BuildingTarget target)
+    {
+        _cachedTarget = target;
+        RefreshDispatchButtonState();
+    }
+
+    private void SelectSquad(SquadConfig cfg)
+    {
+        if (!_dispatchAllowed) return;
+
+        _selectedSquad = cfg;
+        UpdateSlotHighlights();
+        RefreshDispatchButtonState();
+    }
+
+    private void UpdateSlotHighlights()
+    {
+        if (_squadSlots == null) return;
+
+        for (int i = 0; i < _squadSlots.Length; i++)
+        {
+            SquadButtonSlot slot = _squadSlots[i];
+            if (slot != null && slot.selectedHighlight != null)
+            {
+                slot.selectedHighlight.SetActive(_selectedSquad != null && slot.config == _selectedSquad);
+            }
+        }
+    }
+
+    private void RefreshDispatchButtonState()
+    {
+        if (_dispatchButton == null || _dispatchBtnText == null) return;
+
+        if (!_dispatchAllowed)
+        {
+            _dispatchButton.interactable = false;
+            _dispatchBtnText.text = "ОЖИДАНИЕ ВЫЗОВА";
+            return;
+        }
+
+        if (_rightMapMonitor != null)
+        {
+            _cachedTarget = _rightMapMonitor.CurrentBuilding;
+        }
+
+        bool hasTarget = _cachedTarget != null;
+        bool hasSquad = _selectedSquad != null;
+        bool enoughMoney = hasSquad && (_currentCurrency >= _selectedSquad.cost);
+
+        _dispatchButton.interactable = hasTarget && hasSquad && enoughMoney;
 
         if (!hasSquad)
         {
-            _dispatchBtnText.text = "ВЫБЕРИТЕ ОТРЯД В МАГАЗИНЕ";
+            _dispatchBtnText.text = "ВЫБЕРИТЕ ОТРЯД";
         }
-        else if (!hasBuilding)
+        else if (!hasTarget)
         {
-            _dispatchBtnText.text = "ВЫБЕРИТЕ ЗДАНИЕ НА КАРТЕ СПРАВА";
+            _dispatchBtnText.text = "ВЫБЕРИТЕ ЗДАНИЕ НА КАРТЕ";
+        }
+        else if (!enoughMoney)
+        {
+            _dispatchBtnText.text = $"НЕ ХВАТАЕТ КРЫШЕЧЕК ({_selectedSquad.cost})";
         }
         else
         {
-            _dispatchBtnText.text = $"ОТПРАВИТЬ {_selectedSquadName} В [{_rightMapMonitor.CurrentBuilding.buildingName}]";
+            _dispatchBtnText.text = $"ОТПРАВИТЬ [{_selectedSquad.squadName}]";
         }
-    }
-
-    private void SelectSquad(string squadName, int cost)
-    {
-        _selectedSquadName = squadName;
-        _selectedSquadCost = cost;
-        _reportLogText.text = $"Выбран для заказа: {squadName}. Стоимость: {cost} квот.";
     }
 
     private void OnDispatchClicked()
     {
-        if (_currency < _selectedSquadCost) return;
-
-        // Списываем валюту
-        _currency -= _selectedSquadCost;
-
-        string targetBuilding = _rightMapMonitor.CurrentBuilding.buildingName;
-
-        // Простая симуляция последствий для прототипа:
-        // Если отправили Спецназ — угроза устранена, рассудок на месте, получаем награду
-        if (_selectedSquadName.Contains("Спецназ"))
+        if (!_dispatchAllowed || _selectedSquad == null || _rightMapMonitor == null || _rightMapMonitor.CurrentBuilding == null)
         {
-            _currency += 120; // Награда за успешную операцию
-            _reportLogText.text = $"ОТЧЕТ: Отряд {_selectedSquadName} зачистил здание {targetBuilding}! Получена премия +120.";
-        }
-        else
-        {
-            // Не тот отряд -> провал, рассудок падает!
-            _sanitySlider.value -= 25f;
-            _reportLogText.text = $"ОТЧЕТ: Отряд {_selectedSquadName} уничтожен в {targetBuilding}! Аномалия прорвалась! Рассудок снижен!";
+            return;
         }
 
-        // Сбрасываем выбор
-        _selectedSquadName = null;
-        _selectedSquadCost = 0;
+        SquadConfig dispatchedSquad = _selectedSquad;
+        BuildingTarget targetBuilding = _rightMapMonitor.CurrentBuilding;
+        ClearSelectedSquad();
 
-        UpdateUI();
-    }
-
-    private void UpdateUI()
-    {
-        if (_currencyText != null)
-            _currencyText.text = $"БЮДЖЕТ: {_currency}";
+        if (_shiftController != null)
+        {
+            _shiftController.HandleDispatchRequest(dispatchedSquad, targetBuilding);
+        }
     }
 }

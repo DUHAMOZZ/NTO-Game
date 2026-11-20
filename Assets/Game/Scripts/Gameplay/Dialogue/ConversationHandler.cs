@@ -6,6 +6,8 @@ public class ConversationHandler : MonoBehaviour, IService
     private DialogueRunner runner;
     private DialogueConversation[] dialogueConversations;
 
+    public bool ManagedExternally { get; set; }
+
     public void Init()
     {
         runner = G.DialogueRunner;
@@ -14,6 +16,7 @@ public class ConversationHandler : MonoBehaviour, IService
 
     private void Start()
     {
+        if (ManagedExternally) return;
         StartRandomConversation();
     }
 

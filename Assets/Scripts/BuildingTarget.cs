@@ -3,23 +3,26 @@ using UnityEngine.UI;
 
 public class BuildingTarget : MonoBehaviour
 {
-    [Header("Данные объекта")]
-    public string buildingName = "Заброшенный склад";
+    [Header("Данные здания")]
+    [SerializeField] private string _buildingId = "Building_01";
+    public string buildingName = "Заброшенный завод";
     public string sectorCode = "Сектор Б-3";
 
-    [Header("Визуальное выделение")]
+    [Header("Компоненты выделения")]
     [SerializeField] private GameObject _outlineObject;
     [SerializeField] private Button _button;
 
     private RightMonitorMapController _controller;
 
+    public string BuildingId => string.IsNullOrEmpty(_buildingId) ? gameObject.name : _buildingId;
+
     public void Initialize(RightMonitorMapController controller)
     {
         _controller = controller;
 
-        if (_button == null) _button = GetComponent<Button>();
         if (_button != null)
         {
+            _button.onClick.RemoveListener(OnClick);
             _button.onClick.AddListener(OnClick);
         }
 
@@ -28,7 +31,10 @@ public class BuildingTarget : MonoBehaviour
 
     private void OnClick()
     {
-        _controller.SelectBuilding(this);
+        if (_controller != null)
+        {
+            _controller.SelectBuilding(this);
+        }
     }
 
     public void SetSelected(bool isSelected)

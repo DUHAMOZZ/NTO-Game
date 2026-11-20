@@ -20,20 +20,46 @@ namespace AnomalyDispatch.Dialogue
         [SerializeField] private float delayBeforeChoices = 0.25f;
 
         private Coroutine _typeRoutine;
+        private Coroutine _spawnChoicesRoutine;
         private Action _onContinue;
         private bool _isTyping;
         private bool _waitingForClick;
         private bool _waitingForChoice;
+        private int _ignoreInputFrame = -1;
         private readonly List<GameObject> _spawnedChoices = new();
 
-        public void Show()  { if (rootPanel) rootPanel.SetActive(true); }
-        public void Hide()  { if (rootPanel) rootPanel.SetActive(false); ClearChoices(); }
+        private void Awake()
+        {
+            if (G.DialogueRunner != null)
+            {
+                G.DialogueRunner.RegisterUI(this);
+            }
+
+            if (rootPanel != null && (G.DialogueRunner == null || !G.DialogueRunner.IsRunning))
+            {
+                rootPanel.SetActive(false);
+            }
+        }
+
+        public void Show() { if (rootPanel) rootPanel.SetActive(true); }
+        public void Hide()
+        {
+            if (_typeRoutine != null) { StopCoroutine(_typeRoutine); _typeRoutine = null; }
+            if (_spawnChoicesRoutine != null) { StopCoroutine(_spawnChoicesRoutine); _spawnChoicesRoutine = null; }
+            _isTyping = false;
+            _waitingForClick = false;
+            _waitingForChoice = false;
+            ClearChoices();
+            if (rootPanel) rootPanel.SetActive(false);
+        }
 
         public void ShowNode(DialogueNode node)
         {
+            if (_spawnChoicesRoutine != null) { StopCoroutine(_spawnChoicesRoutine); _spawnChoicesRoutine = null; }
             ClearChoices();
             _waitingForClick = false;
             _waitingForChoice = false;
+            _ignoreInputFrame = Time.frameCount;
 
             if (speakerText) speakerText.text = node.speaker;
 
@@ -54,9 +80,10 @@ namespace AnomalyDispatch.Dialogue
                 Debug.LogError("[DialogueUI] is not configured.");
                 return;
             }
-        
+
             _waitingForChoice = true;
-            StartCoroutine(SpawnChoicesRoutine(choices, state, onPick));
+            if (_spawnChoicesRoutine != null) StopCoroutine(_spawnChoicesRoutine);
+            _spawnChoicesRoutine = StartCoroutine(SpawnChoicesRoutine(choices, state, onPick));
         }
 
         private IEnumerator SpawnChoicesRoutine(List<DialogueChoice> choices, PlayerState state, Action<DialogueChoice> onPick)
@@ -79,12 +106,14 @@ namespace AnomalyDispatch.Dialogue
                 {
                     if (!_waitingForChoice) return;
                     _waitingForChoice = false;
+                    _ignoreInputFrame = Time.frameCount;
                     ClearChoices();
                     onPick?.Invoke(captured);
                 });
 
                 _spawnedChoices.Add(btn.gameObject);
             }
+            _spawnChoicesRoutine = null;
         }
 
         private static bool AreConditionsMet(List<FlagCondition> conditions, PlayerState state)
@@ -98,13 +127,21 @@ namespace AnomalyDispatch.Dialogue
         private IEnumerator TypewriterRoutine(string text)
         {
             _isTyping = true;
-            bodyText.text = text;
+            if (bodyText == null)
+            {
+                _isTyping = false;
+                _typeRoutine = null;
+                yield break;
+            }
+
+            bodyText.text = text ?? string.Empty;
             bodyText.maxVisibleCharacters = 0;
             bodyText.ForceMeshUpdate();
 
             int total = bodyText.textInfo.characterCount;
-            int visible = 0;
-            float acc = 0f;
+            int visible = Mathf.Min(1, total);
+            bodyText.maxVisibleCharacters = visible;
+            float acc = visible;
 
             while (visible < total)
             {
@@ -122,7 +159,7 @@ namespace AnomalyDispatch.Dialogue
         private void SkipTypewriter()
         {
             if (_typeRoutine != null) StopCoroutine(_typeRoutine);
-            bodyText.maxVisibleCharacters = bodyText.textInfo.characterCount;
+            if (bodyText != null) bodyText.maxVisibleCharacters = bodyText.textInfo.characterCount;
             _isTyping = false;
             _typeRoutine = null;
         }
@@ -135,6 +172,7 @@ namespace AnomalyDispatch.Dialogue
 
         private void Update()
         {
+            if (Time.frameCount == _ignoreInputFrame) return;
             if (!WasClickedThisFrame() && !WasSpacePressed()) return;
 
             if (_isTyping) { SkipTypewriter(); return; }
@@ -148,7 +186,6 @@ namespace AnomalyDispatch.Dialogue
             }
         }
 
-        // Поддержка и старого Input Manager, и нового Input System
         private static bool WasClickedThisFrame()
         {
 #if ENABLE_INPUT_SYSTEM
